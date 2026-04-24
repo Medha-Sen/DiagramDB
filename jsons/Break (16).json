@@ -1,0 +1,73 @@
+{
+  "image_id": "Break (16)",
+  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Break (16).png",
+  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Break (16).tex",
+  "extracted_graph": {
+    "diagram_id": "Break (16)",
+    "nodes": [
+      {
+        "node_id": "start",
+        "label_text": "Start",
+        "shape_type": "rounded_rectangle",
+        "semantic_role": "Terminator"
+      },
+      {
+        "node_id": "step1",
+        "label_text": "Step 1",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "decision",
+        "label_text": "Decision",
+        "shape_type": "diamond",
+        "semantic_role": "Decision"
+      },
+      {
+        "node_id": "end",
+        "label_text": "End",
+        "shape_type": "rounded_rectangle",
+        "semantic_role": "Terminator"
+      },
+      {
+        "node_id": "update",
+        "label_text": "Update",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      }
+    ],
+    "edges": [
+      {
+        "edge_id": "edge_1",
+        "source_node_id": "start",
+        "target_node_id": "step1",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_2",
+        "source_node_id": "step1",
+        "target_node_id": "decision",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_3",
+        "source_node_id": "decision",
+        "target_node_id": "end",
+        "condition_label": "Yes"
+      },
+      {
+        "edge_id": "edge_4",
+        "source_node_id": "decision",
+        "target_node_id": "update",
+        "condition_label": "No"
+      },
+      {
+        "edge_id": "edge_5",
+        "source_node_id": "update",
+        "target_node_id": "step1",
+        "condition_label": null
+      }
+    ]
+  },
+  "raw_output": "{\n  \"diagram_id\": \"Break (16)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"start\",\n      \"label_text\": \"Start\",\n      \"shape_type\": \"rounded_rectangle\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"step1\",\n      \"label_text\": \"Step 1\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"decision\",\n      \"label_text\": \"Decision\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"end\",\n      \"label_text\": \"End\",\n      \"shape_type\": \"rounded_rectangle\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"update\",\n      \"label_text\": \"Update\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"edge_1\",\n      \"source_node_id\": \"start\",\n      \"target_node_id\": \"step1\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_2\",\n      \"source_node_id\": \"step1\",\n      \"target_node_id\": \"decision\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_3\",\n      \"source_node_id\": \"decision\",\n      \"target_node_id\": \"end\",\n      \"condition_label\": \"Yes\"\n    },\n    {\n      \"edge_id\": \"edge_4\",\n      \"source_node_id\": \"decision\",\n      \"target_node_id\": \"update\",\n      \"condition_label\": \"No\"\n    },\n    {\n      \"edge_id\": \"edge_5\",\n      \"source_node_id\": \"update\",\n      \"target_node_id\": \"step1\",\n      \"condition_label\": null\n    }\n  ]\n}"
+}

@@ -1,0 +1,67 @@
+{
+  "image_id": "Break (40)",
+  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Break (40).png",
+  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Break (40).tex",
+  "extracted_graph": {
+    "diagram_id": "Break (40)",
+    "nodes": [
+      {
+        "node_id": "prog",
+        "label_text": "Program",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "input",
+        "label_text": "Input image",
+        "shape_type": "rectangle",
+        "semantic_role": "Data"
+      },
+      {
+        "node_id": "desc",
+        "label_text": "Description",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "seg",
+        "label_text": "Segmentation",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "dec",
+        "label_text": "Obstacle/Non-obstacle decision",
+        "shape_type": "rectangle",
+        "semantic_role": "Decision"
+      }
+    ],
+    "edges": [
+      {
+        "edge_id": "edge_prog_input",
+        "source_node_id": "prog",
+        "target_node_id": "input",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_input_desc",
+        "source_node_id": "input",
+        "target_node_id": "desc",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_desc_seg",
+        "source_node_id": "desc",
+        "target_node_id": "seg",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_seg_dec",
+        "source_node_id": "seg",
+        "target_node_id": "dec",
+        "condition_label": null
+      }
+    ]
+  },
+  "raw_output": "{\n  \"diagram_id\": \"Break (40)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"prog\",\n      \"label_text\": \"Program\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"input\",\n      \"label_text\": \"Input image\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Data\"\n    },\n    {\n      \"node_id\": \"desc\",\n      \"label_text\": \"Description\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"seg\",\n      \"label_text\": \"Segmentation\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"dec\",\n      \"label_text\": \"Obstacle/Non-obstacle decision\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Decision\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"edge_prog_input\",\n      \"source_node_id\": \"prog\",\n      \"target_node_id\": \"input\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_input_desc\",\n      \"source_node_id\": \"input\",\n      \"target_node_id\": \"desc\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_desc_seg\",\n      \"source_node_id\": \"desc\",\n      \"target_node_id\": \"seg\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_seg_dec\",\n      \"source_node_id\": \"seg\",\n      \"target_node_id\": \"dec\",\n      \"condition_label\": null\n    }\n  ]\n}"
+}

@@ -1,0 +1,133 @@
+{
+  "image_id": "Break (26)",
+  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Break (26).png",
+  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Break (26).tex",
+  "extracted_graph": {
+    "diagram_id": "Break (26)",
+    "nodes": [
+      {
+        "node_id": "start",
+        "label_text": "START",
+        "shape_type": "rounded_rectangle",
+        "semantic_role": "Terminator"
+      },
+      {
+        "node_id": "greet",
+        "label_text": "Greet",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "enterid",
+        "label_text": "Enter ID",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "driverinfo",
+        "label_text": "INPUT DRIVER INFORMATION",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "verify",
+        "label_text": "Verify finger scan",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "scanagain",
+        "label_text": "SCAN FINGER AGAIN",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "match",
+        "label_text": "1ST AND 2ND SCAN MATCH?",
+        "shape_type": "diamond",
+        "semantic_role": "Decision"
+      },
+      {
+        "node_id": "login",
+        "label_text": "Login",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "stop",
+        "label_text": "STOP",
+        "shape_type": "rounded_rectangle",
+        "semantic_role": "Terminator"
+      },
+      {
+        "node_id": "accept",
+        "label_text": "ACCEPT NO COMMANDS",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      }
+    ],
+    "edges": [
+      {
+        "edge_id": "edge_1",
+        "source_node_id": "start",
+        "target_node_id": "greet",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_2",
+        "source_node_id": "greet",
+        "target_node_id": "enterid",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_3",
+        "source_node_id": "enterid",
+        "target_node_id": "driverinfo",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_4",
+        "source_node_id": "driverinfo",
+        "target_node_id": "verify",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_5",
+        "source_node_id": "verify",
+        "target_node_id": "scanagain",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_6",
+        "source_node_id": "scanagain",
+        "target_node_id": "match",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_7",
+        "source_node_id": "match",
+        "target_node_id": "login",
+        "condition_label": "YES"
+      },
+      {
+        "edge_id": "edge_8",
+        "source_node_id": "login",
+        "target_node_id": "stop",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_9",
+        "source_node_id": "match",
+        "target_node_id": "enterid",
+        "condition_label": "NO"
+      },
+      {
+        "edge_id": "edge_10",
+        "source_node_id": "greet",
+        "target_node_id": "accept",
+        "condition_label": "FAILURE"
+      }
+    ]
+  },
+  "raw_output": "{\n  \"diagram_id\": \"Break (26)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"start\",\n      \"label_text\": \"START\",\n      \"shape_type\": \"rounded_rectangle\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"greet\",\n      \"label_text\": \"Greet\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"enterid\",\n      \"label_text\": \"Enter ID\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"driverinfo\",\n      \"label_text\": \"INPUT DRIVER INFORMATION\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"verify\",\n      \"label_text\": \"Verify finger scan\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"scanagain\",\n      \"label_text\": \"SCAN FINGER AGAIN\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"match\",\n      \"label_text\": \"1ST AND 2ND SCAN MATCH?\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"login\",\n      \"label_text\": \"Login\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"stop\",\n      \"label_text\": \"STOP\",\n      \"shape_type\": \"rounded_rectangle\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"accept\",\n      \"label_text\": \"ACCEPT NO COMMANDS\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"edge_1\",\n      \"source_node_id\": \"start\",\n      \"target_node_id\": \"greet\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_2\",\n      \"source_node_id\": \"greet\",\n      \"target_node_id\": \"enterid\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_3\",\n      \"source_node_id\": \"enterid\",\n      \"target_node_id\": \"driverinfo\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_4\",\n      \"source_node_id\": \"driverinfo\",\n      \"target_node_id\": \"verify\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_5\",\n      \"source_node_id\": \"verify\",\n      \"target_node_id\": \"scanagain\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_6\",\n      \"source_node_id\": \"scanagain\",\n      \"target_node_id\": \"match\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_7\",\n      \"source_node_id\": \"match\",\n      \"target_node_id\": \"login\",\n      \"condition_label\": \"YES\"\n    },\n    {\n      \"edge_id\": \"edge_8\",\n      \"source_node_id\": \"login\",\n      \"target_node_id\": \"stop\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_9\",\n      \"source_node_id\": \"match\",\n      \"target_node_id\": \"enterid\",\n      \"condition_label\": \"NO\"\n    },\n    {\n      \"edge_id\": \"edge_10\",\n      \"source_node_id\": \"greet\",\n      \"target_node_id\": \"accept\",\n      \"condition_label\": \"FAILURE\"\n    }\n  ]\n}"
+}

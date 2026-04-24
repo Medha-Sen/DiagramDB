@@ -1,0 +1,133 @@
+{
+  "image_id": "Normal (279)",
+  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Normal (279).png",
+  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Normal (279).tex",
+  "extracted_graph": {
+    "diagram_id": "Normal (279)",
+    "nodes": [
+      {
+        "node_id": "surgery",
+        "label_text": "Surgery",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "discuss",
+        "label_text": "Discuss with Doctor",
+        "shape_type": "rectangle",
+        "semantic_role": "Decision"
+      },
+      {
+        "node_id": "concerns",
+        "label_text": "Still has concerns",
+        "shape_type": "rectangle",
+        "semantic_role": "Decision"
+      },
+      {
+        "node_id": "contact",
+        "label_text": "Contact Again",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "remain",
+        "label_text": "Concerns remain",
+        "shape_type": "rectangle",
+        "semantic_role": "Decision"
+      },
+      {
+        "node_id": "ensureleft",
+        "label_text": "Ensure documentation is complete",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "assessment",
+        "label_text": "Assessment made. CP procedures follow",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "noconcerns",
+        "label_text": "No longer has concerns",
+        "shape_type": "rectangle",
+        "semantic_role": "Decision"
+      },
+      {
+        "node_id": "noaction",
+        "label_text": "No further CP action",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "ensureright",
+        "label_text": "Ensure documentation complete",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      }
+    ],
+    "edges": [
+      {
+        "edge_id": "edge_1",
+        "source_node_id": "surgery",
+        "target_node_id": "discuss",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_2",
+        "source_node_id": "discuss",
+        "target_node_id": "concerns",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_3",
+        "source_node_id": "discuss",
+        "target_node_id": "noconcerns",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_4",
+        "source_node_id": "concerns",
+        "target_node_id": "contact",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_5",
+        "source_node_id": "contact",
+        "target_node_id": "remain",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_6",
+        "source_node_id": "remain",
+        "target_node_id": "ensureleft",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_7",
+        "source_node_id": "ensureleft",
+        "target_node_id": "assessment",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_8",
+        "source_node_id": "noconcerns",
+        "target_node_id": "noaction",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_9",
+        "source_node_id": "noaction",
+        "target_node_id": "ensureright",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_10",
+        "source_node_id": "contact",
+        "target_node_id": "noconcerns",
+        "condition_label": null
+      }
+    ]
+  },
+  "raw_output": "{\n  \"diagram_id\": \"Normal (279)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"surgery\",\n      \"label_text\": \"Surgery\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"discuss\",\n      \"label_text\": \"Discuss with Doctor\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"concerns\",\n      \"label_text\": \"Still has concerns\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"contact\",\n      \"label_text\": \"Contact Again\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"remain\",\n      \"label_text\": \"Concerns remain\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"ensureleft\",\n      \"label_text\": \"Ensure documentation is complete\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"assessment\",\n      \"label_text\": \"Assessment made. CP procedures follow\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"noconcerns\",\n      \"label_text\": \"No longer has concerns\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"noaction\",\n      \"label_text\": \"No further CP action\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"ensureright\",\n      \"label_text\": \"Ensure documentation complete\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"edge_1\",\n      \"source_node_id\": \"surgery\",\n      \"target_node_id\": \"discuss\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_2\",\n      \"source_node_id\": \"discuss\",\n      \"target_node_id\": \"concerns\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_3\",\n      \"source_node_id\": \"discuss\",\n      \"target_node_id\": \"noconcerns\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_4\",\n      \"source_node_id\": \"concerns\",\n      \"target_node_id\": \"contact\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_5\",\n      \"source_node_id\": \"contact\",\n      \"target_node_id\": \"remain\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_6\",\n      \"source_node_id\": \"remain\",\n      \"target_node_id\": \"ensureleft\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_7\",\n      \"source_node_id\": \"ensureleft\",\n      \"target_node_id\": \"assessment\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_8\",\n      \"source_node_id\": \"noconcerns\",\n      \"target_node_id\": \"noaction\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_9\",\n      \"source_node_id\": \"noaction\",\n      \"target_node_id\": \"ensureright\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_10\",\n      \"source_node_id\": \"contact\",\n      \"target_node_id\": \"noconcerns\",\n      \"condition_label\": null\n    }\n  ]\n}"
+}

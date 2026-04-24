@@ -1,0 +1,193 @@
+{
+  "image_id": "Connect (71)",
+  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Connect (71).png",
+  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Connect (71).tex",
+  "extracted_graph": {
+    "diagram_id": "Connect (71)",
+    "nodes": [
+      {
+        "node_id": "start",
+        "label_text": "Start",
+        "shape_type": "rounded_rectangle",
+        "semantic_role": "Terminator"
+      },
+      {
+        "node_id": "reg_q",
+        "label_text": "If registered?",
+        "shape_type": "diamond",
+        "semantic_role": "Decision"
+      },
+      {
+        "node_id": "login",
+        "label_text": "Login",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "valid_q",
+        "label_text": "Is valid?",
+        "shape_type": "diamond",
+        "semantic_role": "Decision"
+      },
+      {
+        "node_id": "admin_q",
+        "label_text": "Is Admin?",
+        "shape_type": "diamond",
+        "semantic_role": "Decision"
+      },
+      {
+        "node_id": "reg_p",
+        "label_text": "Registration",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "add_info",
+        "label_text": "Add\\information",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "update_info",
+        "label_text": "Update all\\information",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "travel_info",
+        "label_text": "Traveling\\information\\update",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "search",
+        "label_text": "Search\\vehicle",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "reserved",
+        "label_text": "Car reserved",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "get_id",
+        "label_text": "Get ID",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "logout",
+        "label_text": "Log out",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "stop",
+        "label_text": "Stop",
+        "shape_type": "rounded_rectangle",
+        "semantic_role": "Terminator"
+      }
+    ],
+    "edges": [
+      {
+        "edge_id": "edge_1",
+        "source_node_id": "start",
+        "target_node_id": "reg_q",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_2",
+        "source_node_id": "reg_q",
+        "target_node_id": "login",
+        "condition_label": "Yes"
+      },
+      {
+        "edge_id": "edge_3",
+        "source_node_id": "reg_q",
+        "target_node_id": "reg_p",
+        "condition_label": "No"
+      },
+      {
+        "edge_id": "edge_4",
+        "source_node_id": "reg_p",
+        "target_node_id": "login",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_5",
+        "source_node_id": "login",
+        "target_node_id": "valid_q",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_6",
+        "source_node_id": "valid_q",
+        "target_node_id": "login",
+        "condition_label": "No"
+      },
+      {
+        "edge_id": "edge_7",
+        "source_node_id": "valid_q",
+        "target_node_id": "admin_q",
+        "condition_label": "Yes"
+      },
+      {
+        "edge_id": "edge_8",
+        "source_node_id": "admin_q",
+        "target_node_id": "add_info",
+        "condition_label": "Yes"
+      },
+      {
+        "edge_id": "edge_9",
+        "source_node_id": "admin_q",
+        "target_node_id": "search",
+        "condition_label": "No"
+      },
+      {
+        "edge_id": "edge_10",
+        "source_node_id": "add_info",
+        "target_node_id": "update_info",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_11",
+        "source_node_id": "update_info",
+        "target_node_id": "travel_info",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_12",
+        "source_node_id": "search",
+        "target_node_id": "reserved",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_13",
+        "source_node_id": "reserved",
+        "target_node_id": "get_id",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_14",
+        "source_node_id": "travel_info",
+        "target_node_id": "logout",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_15",
+        "source_node_id": "get_id",
+        "target_node_id": "logout",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_16",
+        "source_node_id": "logout",
+        "target_node_id": "stop",
+        "condition_label": null
+      }
+    ]
+  },
+  "raw_output": "{\n  \"diagram_id\": \"Connect (71)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"start\",\n      \"label_text\": \"Start\",\n      \"shape_type\": \"rounded_rectangle\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"reg_q\",\n      \"label_text\": \"If registered?\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"login\",\n      \"label_text\": \"Login\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"valid_q\",\n      \"label_text\": \"Is valid?\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"admin_q\",\n      \"label_text\": \"Is Admin?\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"reg_p\",\n      \"label_text\": \"Registration\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"add_info\",\n      \"label_text\": \"Add\\\\information\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"update_info\",\n      \"label_text\": \"Update all\\\\information\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"travel_info\",\n      \"label_text\": \"Traveling\\\\information\\\\update\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"search\",\n      \"label_text\": \"Search\\\\vehicle\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"reserved\",\n      \"label_text\": \"Car reserved\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"get_id\",\n      \"label_text\": \"Get ID\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"logout\",\n      \"label_text\": \"Log out\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"stop\",\n      \"label_text\": \"Stop\",\n      \"shape_type\": \"rounded_rectangle\",\n      \"semantic_role\": \"Terminator\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"edge_1\",\n      \"source_node_id\": \"start\",\n      \"target_node_id\": \"reg_q\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_2\",\n      \"source_node_id\": \"reg_q\",\n      \"target_node_id\": \"login\",\n      \"condition_label\": \"Yes\"\n    },\n    {\n      \"edge_id\": \"edge_3\",\n      \"source_node_id\": \"reg_q\",\n      \"target_node_id\": \"reg_p\",\n      \"condition_label\": \"No\"\n    },\n    {\n      \"edge_id\": \"edge_4\",\n      \"source_node_id\": \"reg_p\",\n      \"target_node_id\": \"login\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_5\",\n      \"source_node_id\": \"login\",\n      \"target_node_id\": \"valid_q\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_6\",\n      \"source_node_id\": \"valid_q\",\n      \"target_node_id\": \"login\",\n      \"condition_label\": \"No\"\n    },\n    {\n      \"edge_id\": \"edge_7\",\n      \"source_node_id\": \"valid_q\",\n      \"target_node_id\": \"admin_q\",\n      \"condition_label\": \"Yes\"\n    },\n    {\n      \"edge_id\": \"edge_8\",\n      \"source_node_id\": \"admin_q\",\n      \"target_node_id\": \"add_info\",\n      \"condition_label\": \"Yes\"\n    },\n    {\n      \"edge_id\": \"edge_9\",\n      \"source_node_id\": \"admin_q\",\n      \"target_node_id\": \"search\",\n      \"condition_label\": \"No\"\n    },\n    {\n      \"edge_id\": \"edge_10\",\n      \"source_node_id\": \"add_info\",\n      \"target_node_id\": \"update_info\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_11\",\n      \"source_node_id\": \"update_info\",\n      \"target_node_id\": \"travel_info\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_12\",\n      \"source_node_id\": \"search\",\n      \"target_node_id\": \"reserved\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_13\",\n      \"source_node_id\": \"reserved\",\n      \"target_node_id\": \"get_id\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_14\",\n      \"source_node_id\": \"travel_info\",\n      \"target_node_id\": \"logout\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_15\",\n      \"source_node_id\": \"get_id\",\n      \"target_node_id\": \"logout\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_16\",\n      \"source_node_id\": \"logout\",\n      \"target_node_id\": \"stop\",\n      \"condition_label\": null\n    }\n  ]\n}"
+}

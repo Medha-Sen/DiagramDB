@@ -1,0 +1,85 @@
+{
+  "image_id": "Connect (4)",
+  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Connect (4).png",
+  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Connect (4).tex",
+  "extracted_graph": {
+    "diagram_id": "Connect (4)",
+    "nodes": [
+      {
+        "node_id": "start",
+        "label_text": "Start",
+        "shape_type": "rounded_rectangle",
+        "semantic_role": "Terminator"
+      },
+      {
+        "node_id": "read",
+        "label_text": "Read\\[0.3em]Value",
+        "shape_type": "trapezium",
+        "semantic_role": "Data"
+      },
+      {
+        "node_id": "decide",
+        "label_text": "Temp\\[0.2em]< 32?",
+        "shape_type": "diamond",
+        "semantic_role": "Decision"
+      },
+      {
+        "node_id": "printcold",
+        "label_text": "Print\\[0.5em] Cold",
+        "shape_type": "trapezium",
+        "semantic_role": "Data"
+      },
+      {
+        "node_id": "printnotcold",
+        "label_text": "Print\\[0.5em] Not Cold",
+        "shape_type": "trapezium",
+        "semantic_role": "Data"
+      },
+      {
+        "node_id": "end",
+        "label_text": "End",
+        "shape_type": "rounded_rectangle",
+        "semantic_role": "Terminator"
+      }
+    ],
+    "edges": [
+      {
+        "edge_id": "edge_1",
+        "source_node_id": "start",
+        "target_node_id": "read",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_2",
+        "source_node_id": "read",
+        "target_node_id": "decide",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_3",
+        "source_node_id": "decide",
+        "target_node_id": "printcold",
+        "condition_label": "Yes"
+      },
+      {
+        "edge_id": "edge_4",
+        "source_node_id": "decide",
+        "target_node_id": "printnotcold",
+        "condition_label": "No"
+      },
+      {
+        "edge_id": "edge_5",
+        "source_node_id": "printcold",
+        "target_node_id": "end",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_6",
+        "source_node_id": "printnotcold",
+        "target_node_id": "end",
+        "condition_label": null
+      }
+    ]
+  },
+  "raw_output": "{\n  \"diagram_id\": \"Connect (4)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"start\",\n      \"label_text\": \"Start\",\n      \"shape_type\": \"rounded_rectangle\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"read\",\n      \"label_text\": \"Read\\\\[0.3em]Value\",\n      \"shape_type\": \"trapezium\",\n      \"semantic_role\": \"Data\"\n    },\n    {\n      \"node_id\": \"decide\",\n      \"label_text\": \"Temp\\\\[0.2em]< 32?\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"printcold\",\n      \"label_text\": \"Print\\\\[0.5em] Cold\",\n      \"shape_type\": \"trapezium\",\n      \"semantic_role\": \"Data\"\n    },\n    {\n      \"node_id\": \"printnotcold\",\n      \"label_text\": \"Print\\\\[0.5em] Not Cold\",\n      \"shape_type\": \"trapezium\",\n      \"semantic_role\": \"Data\"\n    },\n    {\n      \"node_id\": \"end\",\n      \"label_text\": \"End\",\n      \"shape_type\": \"rounded_rectangle\",\n      \"semantic_role\": \"Terminator\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"edge_1\",\n      \"source_node_id\": \"start\",\n      \"target_node_id\": \"read\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_2\",\n      \"source_node_id\": \"read\",\n      \"target_node_id\": \"decide\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_3\",\n      \"source_node_id\": \"decide\",\n      \"target_node_id\": \"printcold\",\n      \"condition_label\": \"Yes\"\n    },\n    {\n      \"edge_id\": \"edge_4\",\n      \"source_node_id\": \"decide\",\n      \"target_node_id\": \"printnotcold\",\n      \"condition_label\": \"No\"\n    },\n    {\n      \"edge_id\": \"edge_5\",\n      \"source_node_id\": \"printcold\",\n      \"target_node_id\": \"end\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_6\",\n      \"source_node_id\": \"printnotcold\",\n      \"target_node_id\": \"end\",\n      \"condition_label\": null\n    }\n  ]\n}"
+}

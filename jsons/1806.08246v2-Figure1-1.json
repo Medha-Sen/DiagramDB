@@ -1,0 +1,145 @@
+{
+  "image_id": "image_09bd47",
+  "image_path": "image_09bd47.png",
+  "tikz_path": "image_09bd47.tex",
+  "extracted_graph": {
+    "diagram_id": "image_09bd47",
+    "nodes": [
+      {
+        "node_id": "data",
+        "label_text": "Data",
+        "shape_type": "cylinder",
+        "semantic_role": "Database"
+      },
+      {
+        "node_id": "cnn",
+        "label_text": "CNN Training",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "pd_b1",
+        "label_text": "Select entities & gather exemplary images",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "pd_b2",
+        "label_text": "Feature extraction",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "pd_b3",
+        "label_text": "Filtering",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "ia_logo",
+        "label_text": "INTERNET ARCHIVE",
+        "shape_type": "icon",
+        "semantic_role": "Source"
+      },
+      {
+        "node_id": "web_content",
+        "label_text": "Web Content",
+        "shape_type": "rectangle",
+        "semantic_role": "Data"
+      },
+      {
+        "node_id": "pi_b1",
+        "label_text": "Face Detection",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "pi_b2",
+        "label_text": "Feature\\Extraction",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "pi_b3",
+        "label_text": "Face\\Verification",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "pi_b4",
+        "label_text": "Visualization",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      }
+    ],
+    "edges": [
+      {
+        "edge_id": "edge_1",
+        "source_node_id": "data",
+        "target_node_id": "cnn",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_2",
+        "source_node_id": "cnn",
+        "target_node_id": "pd_b2",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_3",
+        "source_node_id": "cnn",
+        "target_node_id": "pi_b2",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_4",
+        "source_node_id": "pd_b1",
+        "target_node_id": "pd_b2",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_5",
+        "source_node_id": "pd_b2",
+        "target_node_id": "pd_b3",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_6",
+        "source_node_id": "pd_b3",
+        "target_node_id": "pi_b3",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_7",
+        "source_node_id": "ia_logo",
+        "target_node_id": "web_content",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_8",
+        "source_node_id": "web_content",
+        "target_node_id": "pi_b1",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_9",
+        "source_node_id": "pi_b1",
+        "target_node_id": "pi_b2",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_10",
+        "source_node_id": "pi_b2",
+        "target_node_id": "pi_b3",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_11",
+        "source_node_id": "pi_b3",
+        "target_node_id": "pi_b4",
+        "condition_label": null
+      }
+    ]
+  },
+  "raw_output": "{\n  \"diagram_id\": \"image_09bd47\",\n  \"nodes\": [\n    {\n      \"node_id\": \"data\",\n      \"label_text\": \"Data\",\n      \"shape_type\": \"cylinder\",\n      \"semantic_role\": \"Database\"\n    },\n    {\n      \"node_id\": \"cnn\",\n      \"label_text\": \"CNN Training\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"pd_b1\",\n      \"label_text\": \"Select entities & gather exemplary images\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"pd_b2\",\n      \"label_text\": \"Feature extraction\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"pd_b3\",\n      \"label_text\": \"Filtering\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"ia_logo\",\n      \"label_text\": \"INTERNET ARCHIVE\",\n      \"shape_type\": \"icon\",\n      \"semantic_role\": \"Source\"\n    },\n    {\n      \"node_id\": \"web_content\",\n      \"label_text\": \"Web Content\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Data\"\n    },\n    {\n      \"node_id\": \"pi_b1\",\n      \"label_text\": \"Face Detection\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"pi_b2\",\n      \"label_text\": \"Feature\\\\Extraction\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"pi_b3\",\n      \"label_text\": \"Face\\\\Verification\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"pi_b4\",\n      \"label_text\": \"Visualization\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"edge_1\",\n      \"source_node_id\": \"data\",\n      \"target_node_id\": \"cnn\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_2\",\n      \"source_node_id\": \"cnn\",\n      \"target_node_id\": \"pd_b2\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_3\",\n      \"source_node_id\": \"cnn\",\n      \"target_node_id\": \"pi_b2\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_4\",\n      \"source_node_id\": \"pd_b1\",\n      \"target_node_id\": \"pd_b2\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_5\",\n      \"source_node_id\": \"pd_b2\",\n      \"target_node_id\": \"pd_b3\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_6\",\n      \"source_node_id\": \"pd_b3\",\n      \"target_node_id\": \"pi_b3\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_7\",\n      \"source_node_id\": \"ia_logo\",\n      \"target_node_id\": \"web_content\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_8\",\n      \"source_node_id\": \"web_content\",\n      \"target_node_id\": \"pi_b1\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_9\",\n      \"source_node_id\": \"pi_b1\",\n      \"target_node_id\": \"pi_b2\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_10\",\n      \"source_node_id\": \"pi_b2\",\n      \"target_node_id\": \"pi_b3\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_11\",\n      \"source_node_id\": \"pi_b3\",\n      \"target_node_id\": \"pi_b4\",\n      \"condition_label\": null\n    }\n  ]\n}"
+}

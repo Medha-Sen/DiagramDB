@@ -1,0 +1,121 @@
+{
+  "image_id": "Normal (145)",
+  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Normal (145).png",
+  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Normal (145).tex",
+  "extracted_graph": {
+    "diagram_id": "Normal (145)",
+    "nodes": [
+      {
+        "node_id": "datacol",
+        "label_text": "Data Collection",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "concmod",
+        "label_text": "Conceptual Model Construction",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "dec1",
+        "label_text": "Sufficient Data?",
+        "shape_type": "diamond",
+        "semantic_role": "Decision"
+      },
+      {
+        "node_id": "gwater",
+        "label_text": "Groundwater Flow",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "dec2",
+        "label_text": "Liberal?",
+        "shape_type": "diamond",
+        "semantic_role": "Decision"
+      },
+      {
+        "node_id": "contrans",
+        "label_text": "Contaminant Transport",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "dec3",
+        "label_text": "Adequate?",
+        "shape_type": "diamond",
+        "semantic_role": "Decision"
+      },
+      {
+        "node_id": "predsim",
+        "label_text": "Predictive Simulations",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      }
+    ],
+    "edges": [
+      {
+        "edge_id": "edge_1",
+        "source_node_id": "datacol",
+        "target_node_id": "concmod",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_2",
+        "source_node_id": "concmod",
+        "target_node_id": "dec1",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_3",
+        "source_node_id": "dec1",
+        "target_node_id": "gwater",
+        "condition_label": "Yes"
+      },
+      {
+        "edge_id": "edge_4",
+        "source_node_id": "gwater",
+        "target_node_id": "dec2",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_5",
+        "source_node_id": "dec2",
+        "target_node_id": "contrans",
+        "condition_label": "Yes"
+      },
+      {
+        "edge_id": "edge_6",
+        "source_node_id": "contrans",
+        "target_node_id": "dec3",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_7",
+        "source_node_id": "dec3",
+        "target_node_id": "predsim",
+        "condition_label": "Yes"
+      },
+      {
+        "edge_id": "edge_8",
+        "source_node_id": "dec1",
+        "target_node_id": "datacol",
+        "condition_label": "No"
+      },
+      {
+        "edge_id": "edge_9",
+        "source_node_id": "dec2",
+        "target_node_id": "gwater",
+        "condition_label": "No"
+      },
+      {
+        "edge_id": "edge_10",
+        "source_node_id": "dec3",
+        "target_node_id": "contrans",
+        "condition_label": "No"
+      }
+    ]
+  },
+  "raw_output": "{\n  \"diagram_id\": \"Normal (145)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"datacol\",\n      \"label_text\": \"Data Collection\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"concmod\",\n      \"label_text\": \"Conceptual Model Construction\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"dec1\",\n      \"label_text\": \"Sufficient Data?\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"gwater\",\n      \"label_text\": \"Groundwater Flow\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"dec2\",\n      \"label_text\": \"Liberal?\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"contrans\",\n      \"label_text\": \"Contaminant Transport\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"dec3\",\n      \"label_text\": \"Adequate?\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"predsim\",\n      \"label_text\": \"Predictive Simulations\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"edge_1\",\n      \"source_node_id\": \"datacol\",\n      \"target_node_id\": \"concmod\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_2\",\n      \"source_node_id\": \"concmod\",\n      \"target_node_id\": \"dec1\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_3\",\n      \"source_node_id\": \"dec1\",\n      \"target_node_id\": \"gwater\",\n      \"condition_label\": \"Yes\"\n    },\n    {\n      \"edge_id\": \"edge_4\",\n      \"source_node_id\": \"gwater\",\n      \"target_node_id\": \"dec2\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_5\",\n      \"source_node_id\": \"dec2\",\n      \"target_node_id\": \"contrans\",\n      \"condition_label\": \"Yes\"\n    },\n    {\n      \"edge_id\": \"edge_6\",\n      \"source_node_id\": \"contrans\",\n      \"target_node_id\": \"dec3\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_7\",\n      \"source_node_id\": \"dec3\",\n      \"target_node_id\": \"predsim\",\n      \"condition_label\": \"Yes\"\n    },\n    {\n      \"edge_id\": \"edge_8\",\n      \"source_node_id\": \"dec1\",\n      \"target_node_id\": \"datacol\",\n      \"condition_label\": \"No\"\n    },\n    {\n      \"edge_id\": \"edge_9\",\n      \"source_node_id\": \"dec2\",\n      \"target_node_id\": \"gwater\",\n      \"condition_label\": \"No\"\n    },\n    {\n      \"edge_id\": \"edge_10\",\n      \"source_node_id\": \"dec3\",\n      \"target_node_id\": \"contrans\",\n      \"condition_label\": \"No\"\n    }\n  ]\n}"
+}

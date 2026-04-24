@@ -1,0 +1,85 @@
+{
+  "image_id": "Normal (140)",
+  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Normal (140).png",
+  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Normal (140).tex",
+  "extracted_graph": {
+    "diagram_id": "Normal (140)",
+    "nodes": [
+      {
+        "node_id": "start",
+        "label_text": "Start",
+        "shape_type": "ellipse",
+        "semantic_role": "Terminator"
+      },
+      {
+        "node_id": "read",
+        "label_text": "Read Temperature",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "check",
+        "label_text": "Check\\Temperature",
+        "shape_type": "diamond",
+        "semantic_role": "Decision"
+      },
+      {
+        "node_id": "below",
+        "label_text": "Print\\``Below Freezing''",
+        "shape_type": "trapezium",
+        "semantic_role": "Data"
+      },
+      {
+        "node_id": "above",
+        "label_text": "Print\\``Above Freezing''",
+        "shape_type": "trapezium",
+        "semantic_role": "Data"
+      },
+      {
+        "node_id": "end",
+        "label_text": "End",
+        "shape_type": "ellipse",
+        "semantic_role": "Terminator"
+      }
+    ],
+    "edges": [
+      {
+        "edge_id": "edge_1",
+        "source_node_id": "start",
+        "target_node_id": "read",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_2",
+        "source_node_id": "read",
+        "target_node_id": "check",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_3",
+        "source_node_id": "check",
+        "target_node_id": "below",
+        "condition_label": "YES"
+      },
+      {
+        "edge_id": "edge_4",
+        "source_node_id": "check",
+        "target_node_id": "above",
+        "condition_label": "NO"
+      },
+      {
+        "edge_id": "edge_5",
+        "source_node_id": "below",
+        "target_node_id": "end",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_6",
+        "source_node_id": "above",
+        "target_node_id": "end",
+        "condition_label": null
+      }
+    ]
+  },
+  "raw_output": "{\n  \"diagram_id\": \"Normal (140)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"start\",\n      \"label_text\": \"Start\",\n      \"shape_type\": \"ellipse\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"read\",\n      \"label_text\": \"Read Temperature\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"check\",\n      \"label_text\": \"Check\\\\Temperature\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"below\",\n      \"label_text\": \"Print\\\\``Below Freezing''\",\n      \"shape_type\": \"trapezium\",\n      \"semantic_role\": \"Data\"\n    },\n    {\n      \"node_id\": \"above\",\n      \"label_text\": \"Print\\\\``Above Freezing''\",\n      \"shape_type\": \"trapezium\",\n      \"semantic_role\": \"Data\"\n    },\n    {\n      \"node_id\": \"end\",\n      \"label_text\": \"End\",\n      \"shape_type\": \"ellipse\",\n      \"semantic_role\": \"Terminator\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"edge_1\",\n      \"source_node_id\": \"start\",\n      \"target_node_id\": \"read\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_2\",\n      \"source_node_id\": \"read\",\n      \"target_node_id\": \"check\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_3\",\n      \"source_node_id\": \"check\",\n      \"target_node_id\": \"below\",\n      \"condition_label\": \"YES\"\n    },\n    {\n      \"edge_id\": \"edge_4\",\n      \"source_node_id\": \"check\",\n      \"target_node_id\": \"above\",\n      \"condition_label\": \"NO\"\n    },\n    {\n      \"edge_id\": \"edge_5\",\n      \"source_node_id\": \"below\",\n      \"target_node_id\": \"end\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_6\",\n      \"source_node_id\": \"above\",\n      \"target_node_id\": \"end\",\n      \"condition_label\": null\n    }\n  ]\n}"
+}

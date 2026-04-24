@@ -1,0 +1,157 @@
+{
+  "image_id": "Connect (69)",
+  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Connect (69).png",
+  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Connect (69).tex",
+  "extracted_graph": {
+    "diagram_id": "Connect (69)",
+    "nodes": [
+      {
+        "node_id": "n1",
+        "label_text": "Customer Consulting and Quotation",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "n2",
+        "label_text": "Deal?",
+        "shape_type": "diamond",
+        "semantic_role": "Decision"
+      },
+      {
+        "node_id": "n3",
+        "label_text": "Go home",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "n4",
+        "label_text": "Invoice",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "n5",
+        "label_text": "Shipping",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "n6",
+        "label_text": "Custom Clearance",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "n7",
+        "label_text": "Payment mode",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "n8",
+        "label_text": "Delivery",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "n9",
+        "label_text": "Service Payment",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "n10",
+        "label_text": "Pay Foreign Exchange?",
+        "shape_type": "diamond",
+        "semantic_role": "Decision"
+      },
+      {
+        "node_id": "n11",
+        "label_text": "Payment",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "n12",
+        "label_text": "Stop",
+        "shape_type": "ellipse",
+        "semantic_role": "Terminator"
+      }
+    ],
+    "edges": [
+      {
+        "edge_id": "e1",
+        "source_node_id": "n1",
+        "target_node_id": "n2",
+        "condition_label": null
+      },
+      {
+        "edge_id": "e2",
+        "source_node_id": "n2",
+        "target_node_id": "n3",
+        "condition_label": "No"
+      },
+      {
+        "edge_id": "e3",
+        "source_node_id": "n2",
+        "target_node_id": "n4",
+        "condition_label": "Yes"
+      },
+      {
+        "edge_id": "e4",
+        "source_node_id": "n4",
+        "target_node_id": "n5",
+        "condition_label": null
+      },
+      {
+        "edge_id": "e5",
+        "source_node_id": "n5",
+        "target_node_id": "n6",
+        "condition_label": null
+      },
+      {
+        "edge_id": "e6",
+        "source_node_id": "n6",
+        "target_node_id": "n7",
+        "condition_label": null
+      },
+      {
+        "edge_id": "e7",
+        "source_node_id": "n7",
+        "target_node_id": "n8",
+        "condition_label": null
+      },
+      {
+        "edge_id": "e8",
+        "source_node_id": "n8",
+        "target_node_id": "n9",
+        "condition_label": null
+      },
+      {
+        "edge_id": "e9",
+        "source_node_id": "n9",
+        "target_node_id": "n10",
+        "condition_label": null
+      },
+      {
+        "edge_id": "e10",
+        "source_node_id": "n10",
+        "target_node_id": "n11",
+        "condition_label": "Yes"
+      },
+      {
+        "edge_id": "e11",
+        "source_node_id": "n10",
+        "target_node_id": "n12",
+        "condition_label": "No"
+      },
+      {
+        "edge_id": "e12",
+        "source_node_id": "n11",
+        "target_node_id": "n12",
+        "condition_label": null
+      }
+    ]
+  },
+  "raw_output": "{\n  \"diagram_id\": \"Connect (69)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"n1\",\n      \"label_text\": \"Customer Consulting and Quotation\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"n2\",\n      \"label_text\": \"Deal?\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"n3\",\n      \"label_text\": \"Go home\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"n4\",\n      \"label_text\": \"Invoice\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"n5\",\n      \"label_text\": \"Shipping\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"n6\",\n      \"label_text\": \"Custom Clearance\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"n7\",\n      \"label_text\": \"Payment mode\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"n8\",\n      \"label_text\": \"Delivery\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"n9\",\n      \"label_text\": \"Service Payment\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"n10\",\n      \"label_text\": \"Pay Foreign Exchange?\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"n11\",\n      \"label_text\": \"Payment\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"n12\",\n      \"label_text\": \"Stop\",\n      \"shape_type\": \"ellipse\",\n      \"semantic_role\": \"Terminator\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"e1\",\n      \"source_node_id\": \"n1\",\n      \"target_node_id\": \"n2\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"e2\",\n      \"source_node_id\": \"n2\",\n      \"target_node_id\": \"n3\",\n      \"condition_label\": \"No\"\n    },\n    {\n      \"edge_id\": \"e3\",\n      \"source_node_id\": \"n2\",\n      \"target_node_id\": \"n4\",\n      \"condition_label\": \"Yes\"\n    },\n    {\n      \"edge_id\": \"e4\",\n      \"source_node_id\": \"n4\",\n      \"target_node_id\": \"n5\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"e5\",\n      \"source_node_id\": \"n5\",\n      \"target_node_id\": \"n6\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"e6\",\n      \"source_node_id\": \"n6\",\n      \"target_node_id\": \"n7\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"e7\",\n      \"source_node_id\": \"n7\",\n      \"target_node_id\": \"n8\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"e8\",\n      \"source_node_id\": \"n8\",\n      \"target_node_id\": \"n9\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"e9\",\n      \"source_node_id\": \"n9\",\n      \"target_node_id\": \"n10\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"e10\",\n      \"source_node_id\": \"n10\",\n      \"target_node_id\": \"n11\",\n      \"condition_label\": \"Yes\"\n    },\n    {\n      \"edge_id\": \"e11\",\n      \"source_node_id\": \"n10\",\n      \"target_node_id\": \"n12\",\n      \"condition_label\": \"No\"\n    },\n    {\n      \"edge_id\": \"e12\",\n      \"source_node_id\": \"n11\",\n      \"target_node_id\": \"n12\",\n      \"condition_label\": null\n    }\n  ]\n}"
+}

@@ -1,0 +1,67 @@
+{
+  "image_id": "Normal (22)",
+  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Normal (22).png",
+  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Normal (22).tex",
+  "extracted_graph": {
+    "diagram_id": "Normal (22)",
+    "nodes": [
+      {
+        "node_id": "a",
+        "label_text": "Go the first\\dose?",
+        "shape_type": "rectangle",
+        "semantic_role": "Decision"
+      },
+      {
+        "node_id": "b",
+        "label_text": "1 dose",
+        "shape_type": "rectangle",
+        "semantic_role": "Terminator"
+      },
+      {
+        "node_id": "c",
+        "label_text": "Go second\\dose?",
+        "shape_type": "rectangle",
+        "semantic_role": "Decision"
+      },
+      {
+        "node_id": "d",
+        "label_text": "1 dose",
+        "shape_type": "rectangle",
+        "semantic_role": "Terminator"
+      },
+      {
+        "node_id": "e",
+        "label_text": "2 doses",
+        "shape_type": "rectangle",
+        "semantic_role": "Terminator"
+      }
+    ],
+    "edges": [
+      {
+        "edge_id": "e1",
+        "source_node_id": "a",
+        "target_node_id": "b",
+        "condition_label": "Yes"
+      },
+      {
+        "edge_id": "e2",
+        "source_node_id": "a",
+        "target_node_id": "c",
+        "condition_label": "No/\\Don't know"
+      },
+      {
+        "edge_id": "e3",
+        "source_node_id": "c",
+        "target_node_id": "d",
+        "condition_label": "Yes"
+      },
+      {
+        "edge_id": "e4",
+        "source_node_id": "c",
+        "target_node_id": "e",
+        "condition_label": "No/\\Don't know"
+      }
+    ]
+  },
+  "raw_output": "{\n  \"diagram_id\": \"Normal (22)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"a\",\n      \"label_text\": \"Go the first\\\\dose?\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"b\",\n      \"label_text\": \"1 dose\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"c\",\n      \"label_text\": \"Go second\\\\dose?\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"d\",\n      \"label_text\": \"1 dose\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"e\",\n      \"label_text\": \"2 doses\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Terminator\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"e1\",\n      \"source_node_id\": \"a\",\n      \"target_node_id\": \"b\",\n      \"condition_label\": \"Yes\"\n    },\n    {\n      \"edge_id\": \"e2\",\n      \"source_node_id\": \"a\",\n      \"target_node_id\": \"c\",\n      \"condition_label\": \"No/\\\\Don't know\"\n    },\n    {\n      \"edge_id\": \"e3\",\n      \"source_node_id\": \"c\",\n      \"target_node_id\": \"d\",\n      \"condition_label\": \"Yes\"\n    },\n    {\n      \"edge_id\": \"e4\",\n      \"source_node_id\": \"c\",\n      \"target_node_id\": \"e\",\n      \"condition_label\": \"No/\\\\Don't know\"\n    }\n  ]\n}"
+}

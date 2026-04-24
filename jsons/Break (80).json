@@ -1,0 +1,127 @@
+{
+  "image_id": "Break (80)",
+  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Break (80).png",
+  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Break (80).tex",
+  "extracted_graph": {
+    "diagram_id": "Break (80)",
+    "nodes": [
+      {
+        "node_id": "begin",
+        "label_text": "Begin",
+        "shape_type": "ellipse",
+        "semantic_role": "Terminator"
+      },
+      {
+        "node_id": "sum0",
+        "label_text": "SUM=0",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "input",
+        "label_text": "Input N",
+        "shape_type": "trapezium",
+        "semantic_role": "Data"
+      },
+      {
+        "node_id": "cond",
+        "label_text": "N != 0 ?",
+        "shape_type": "diamond",
+        "semantic_role": "Decision"
+      },
+      {
+        "node_id": "rem",
+        "label_text": "REM=N%10",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "sum",
+        "label_text": "SUM=SUM+R\\EM",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "n",
+        "label_text": "N=N/10",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "print",
+        "label_text": "PRINT SUM",
+        "shape_type": "trapezium",
+        "semantic_role": "Data"
+      },
+      {
+        "node_id": "stop",
+        "label_text": "Stop",
+        "shape_type": "ellipse",
+        "semantic_role": "Terminator"
+      }
+    ],
+    "edges": [
+      {
+        "edge_id": "edge_1",
+        "source_node_id": "begin",
+        "target_node_id": "sum0",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_2",
+        "source_node_id": "sum0",
+        "target_node_id": "input",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_3",
+        "source_node_id": "input",
+        "target_node_id": "cond",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_4",
+        "source_node_id": "cond",
+        "target_node_id": "rem",
+        "condition_label": "TRUE"
+      },
+      {
+        "edge_id": "edge_5",
+        "source_node_id": "rem",
+        "target_node_id": "sum",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_6",
+        "source_node_id": "sum",
+        "target_node_id": "n",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_7",
+        "source_node_id": "n",
+        "target_node_id": "print",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_8",
+        "source_node_id": "print",
+        "target_node_id": "stop",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_9",
+        "source_node_id": "n",
+        "target_node_id": "cond",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_10",
+        "source_node_id": "cond",
+        "target_node_id": "print",
+        "condition_label": "FASLE"
+      }
+    ]
+  },
+  "raw_output": "{\n  \"diagram_id\": \"Break (80)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"begin\",\n      \"label_text\": \"Begin\",\n      \"shape_type\": \"ellipse\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"sum0\",\n      \"label_text\": \"SUM=0\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"input\",\n      \"label_text\": \"Input N\",\n      \"shape_type\": \"trapezium\",\n      \"semantic_role\": \"Data\"\n    },\n    {\n      \"node_id\": \"cond\",\n      \"label_text\": \"N != 0 ?\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"rem\",\n      \"label_text\": \"REM=N%10\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"sum\",\n      \"label_text\": \"SUM=SUM+R\\\\EM\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"n\",\n      \"label_text\": \"N=N/10\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"print\",\n      \"label_text\": \"PRINT SUM\",\n      \"shape_type\": \"trapezium\",\n      \"semantic_role\": \"Data\"\n    },\n    {\n      \"node_id\": \"stop\",\n      \"label_text\": \"Stop\",\n      \"shape_type\": \"ellipse\",\n      \"semantic_role\": \"Terminator\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"edge_1\",\n      \"source_node_id\": \"begin\",\n      \"target_node_id\": \"sum0\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_2\",\n      \"source_node_id\": \"sum0\",\n      \"target_node_id\": \"input\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_3\",\n      \"source_node_id\": \"input\",\n      \"target_node_id\": \"cond\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_4\",\n      \"source_node_id\": \"cond\",\n      \"target_node_id\": \"rem\",\n      \"condition_label\": \"TRUE\"\n    },\n    {\n      \"edge_id\": \"edge_5\",\n      \"source_node_id\": \"rem\",\n      \"target_node_id\": \"sum\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_6\",\n      \"source_node_id\": \"sum\",\n      \"target_node_id\": \"n\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_7\",\n      \"source_node_id\": \"n\",\n      \"target_node_id\": \"print\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_8\",\n      \"source_node_id\": \"print\",\n      \"target_node_id\": \"stop\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_9\",\n      \"source_node_id\": \"n\",\n      \"target_node_id\": \"cond\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_10\",\n      \"source_node_id\": \"cond\",\n      \"target_node_id\": \"print\",\n      \"condition_label\": \"FASLE\"\n    }\n  ]\n}"
+}

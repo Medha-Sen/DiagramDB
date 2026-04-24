@@ -1,0 +1,38 @@
+[
+  {
+    "chart_id": "00339007006077",
+    "metadata": {
+      "title": "Share of children who are wasted, 2010",
+      "chart_type": "Bar",
+      "x_axis_label": "Percentage (%)",
+      "y_axis_label": "Country"
+    },
+    "data_points": [
+      {
+        "series": "Total",
+        "category": "Haiti",
+        "value": 6.12
+      },
+      {
+        "series": "Total",
+        "category": "Libya",
+        "value": 5.32
+      },
+      {
+        "series": "Total",
+        "category": "Morocco",
+        "value": 5.11
+      },
+      {
+        "series": "Total",
+        "category": "Lebanon",
+        "value": 4.50
+      },
+      {
+        "series": "Total",
+        "category": "Colombia",
+        "value": 1.45
+      }
+    ]
+  }
+]

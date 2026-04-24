@@ -1,0 +1,67 @@
+{
+  "image_id": "Normal (252)",
+  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Normal (252).png",
+  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Normal (252).tex",
+  "extracted_graph": {
+    "diagram_id": "Normal (252)",
+    "nodes": [
+      {
+        "node_id": "begin",
+        "label_text": "Begin",
+        "shape_type": "rounded rectangle",
+        "semantic_role": "Terminator"
+      },
+      {
+        "node_id": "input",
+        "label_text": "Input length, width",
+        "shape_type": "trapezium",
+        "semantic_role": "Data"
+      },
+      {
+        "node_id": "calc",
+        "label_text": "Perimeter = 2 * (length + width)",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "output",
+        "label_text": "Print output",
+        "shape_type": "trapezium",
+        "semantic_role": "Data"
+      },
+      {
+        "node_id": "stop",
+        "label_text": "Stop",
+        "shape_type": "rounded rectangle",
+        "semantic_role": "Terminator"
+      }
+    ],
+    "edges": [
+      {
+        "edge_id": "edge_1",
+        "source_node_id": "begin",
+        "target_node_id": "input",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_2",
+        "source_node_id": "input",
+        "target_node_id": "calc",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_3",
+        "source_node_id": "calc",
+        "target_node_id": "output",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_4",
+        "source_node_id": "output",
+        "target_node_id": "stop",
+        "condition_label": null
+      }
+    ]
+  },
+  "raw_output": "{\n  \"diagram_id\": \"Normal (252)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"begin\",\n      \"label_text\": \"Begin\",\n      \"shape_type\": \"rounded rectangle\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"input\",\n      \"label_text\": \"Input length, width\",\n      \"shape_type\": \"trapezium\",\n      \"semantic_role\": \"Data\"\n    },\n    {\n      \"node_id\": \"calc\",\n      \"label_text\": \"Perimeter = 2 * (length + width)\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"output\",\n      \"label_text\": \"Print output\",\n      \"shape_type\": \"trapezium\",\n      \"semantic_role\": \"Data\"\n    },\n    {\n      \"node_id\": \"stop\",\n      \"label_text\": \"Stop\",\n      \"shape_type\": \"rounded rectangle\",\n      \"semantic_role\": \"Terminator\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"edge_1\",\n      \"source_node_id\": \"begin\",\n      \"target_node_id\": \"input\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_2\",\n      \"source_node_id\": \"input\",\n      \"target_node_id\": \"calc\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_3\",\n      \"source_node_id\": \"calc\",\n      \"target_node_id\": \"output\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_4\",\n      \"source_node_id\": \"output\",\n      \"target_node_id\": \"stop\",\n      \"condition_label\": null\n    }\n  ]\n}"
+}

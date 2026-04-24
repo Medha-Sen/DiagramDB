@@ -1,0 +1,127 @@
+{
+  "image_id": "Break (25)",
+  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Break (25).png",
+  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Break (25).tex",
+  "extracted_graph": {
+    "diagram_id": "Break (25)",
+    "nodes": [
+      {
+        "node_id": "start",
+        "label_text": "Start",
+        "shape_type": "rounded_rectangle",
+        "semantic_role": "Terminator"
+      },
+      {
+        "node_id": "submit",
+        "label_text": "Submit the\\registration\\form",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "complete",
+        "label_text": "Form\\Complete?",
+        "shape_type": "diamond",
+        "semantic_role": "Decision"
+      },
+      {
+        "node_id": "verify",
+        "label_text": "Verify\\details",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "accept",
+        "label_text": "Accept\\Submission?",
+        "shape_type": "diamond",
+        "semantic_role": "Decision"
+      },
+      {
+        "node_id": "return",
+        "label_text": "Return\\Document",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "end",
+        "label_text": "End",
+        "shape_type": "rounded_rectangle",
+        "semantic_role": "Terminator"
+      },
+      {
+        "node_id": "write",
+        "label_text": "Write\\Acceptance\\Letter",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "confirm",
+        "label_text": "Confirmation",
+        "shape_type": "tape",
+        "semantic_role": "Data"
+      }
+    ],
+    "edges": [
+      {
+        "edge_id": "edge_1",
+        "source_node_id": "start",
+        "target_node_id": "submit",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_2",
+        "source_node_id": "submit",
+        "target_node_id": "complete",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_3",
+        "source_node_id": "complete",
+        "target_node_id": "verify",
+        "condition_label": "Yes"
+      },
+      {
+        "edge_id": "edge_4",
+        "source_node_id": "complete",
+        "target_node_id": "submit",
+        "condition_label": "No"
+      },
+      {
+        "edge_id": "edge_5",
+        "source_node_id": "verify",
+        "target_node_id": "accept",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_6",
+        "source_node_id": "accept",
+        "target_node_id": "return",
+        "condition_label": "No"
+      },
+      {
+        "edge_id": "edge_7",
+        "source_node_id": "accept",
+        "target_node_id": "write",
+        "condition_label": "Yes"
+      },
+      {
+        "edge_id": "edge_8",
+        "source_node_id": "return",
+        "target_node_id": "end",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_9",
+        "source_node_id": "write",
+        "target_node_id": "confirm",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_10",
+        "source_node_id": "confirm",
+        "target_node_id": "end",
+        "condition_label": null
+      }
+    ]
+  },
+  "raw_output": "{\n  \"diagram_id\": \"Break (25)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"start\",\n      \"label_text\": \"Start\",\n      \"shape_type\": \"rounded_rectangle\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"submit\",\n      \"label_text\": \"Submit the\\\\registration\\\\form\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"complete\",\n      \"label_text\": \"Form\\\\Complete?\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"verify\",\n      \"label_text\": \"Verify\\\\details\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"accept\",\n      \"label_text\": \"Accept\\\\Submission?\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"return\",\n      \"label_text\": \"Return\\\\Document\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"end\",\n      \"label_text\": \"End\",\n      \"shape_type\": \"rounded_rectangle\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"write\",\n      \"label_text\": \"Write\\\\Acceptance\\\\Letter\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"confirm\",\n      \"label_text\": \"Confirmation\",\n      \"shape_type\": \"tape\",\n      \"semantic_role\": \"Data\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"edge_1\",\n      \"source_node_id\": \"start\",\n      \"target_node_id\": \"submit\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_2\",\n      \"source_node_id\": \"submit\",\n      \"target_node_id\": \"complete\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_3\",\n      \"source_node_id\": \"complete\",\n      \"target_node_id\": \"verify\",\n      \"condition_label\": \"Yes\"\n    },\n    {\n      \"edge_id\": \"edge_4\",\n      \"source_node_id\": \"complete\",\n      \"target_node_id\": \"submit\",\n      \"condition_label\": \"No\"\n    },\n    {\n      \"edge_id\": \"edge_5\",\n      \"source_node_id\": \"verify\",\n      \"target_node_id\": \"accept\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_6\",\n      \"source_node_id\": \"accept\",\n      \"target_node_id\": \"return\",\n      \"condition_label\": \"No\"\n    },\n    {\n      \"edge_id\": \"edge_7\",\n      \"source_node_id\": \"accept\",\n      \"target_node_id\": \"write\",\n      \"condition_label\": \"Yes\"\n    },\n    {\n      \"edge_id\": \"edge_8\",\n      \"source_node_id\": \"return\",\n      \"target_node_id\": \"end\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_9\",\n      \"source_node_id\": \"write\",\n      \"target_node_id\": \"confirm\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_10\",\n      \"source_node_id\": \"confirm\",\n      \"target_node_id\": \"end\",\n      \"condition_label\": null\n    }\n  ]\n}"
+}

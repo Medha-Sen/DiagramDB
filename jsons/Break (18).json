@@ -1,0 +1,97 @@
+{
+  "image_id": "Break (18)",
+  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Break (18).png",
+  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Break (18).tex",
+  "extracted_graph": {
+    "diagram_id": "Break (18)",
+    "nodes": [
+      {
+        "node_id": "start",
+        "label_text": "Start",
+        "shape_type": "circle",
+        "semantic_role": "Terminator"
+      },
+      {
+        "node_id": "doorbell",
+        "label_text": "Door Bell",
+        "shape_type": "rounded rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "ready",
+        "label_text": "Ready to Get Up?",
+        "shape_type": "diamond",
+        "semantic_role": "Decision"
+      },
+      {
+        "node_id": "wakeup",
+        "label_text": "Wakeup",
+        "shape_type": "rounded rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "end",
+        "label_text": "End",
+        "shape_type": "circle",
+        "semantic_role": "Terminator"
+      },
+      {
+        "node_id": "ignore",
+        "label_text": "Ignore bell",
+        "shape_type": "rounded rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "relay",
+        "label_text": "Relay",
+        "shape_type": "custom_d_shape",
+        "semantic_role": "Data"
+      }
+    ],
+    "edges": [
+      {
+        "edge_id": "edge_1",
+        "source_node_id": "start",
+        "target_node_id": "doorbell",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_2",
+        "source_node_id": "doorbell",
+        "target_node_id": "ready",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_3",
+        "source_node_id": "ready",
+        "target_node_id": "wakeup",
+        "condition_label": "YES"
+      },
+      {
+        "edge_id": "edge_4",
+        "source_node_id": "wakeup",
+        "target_node_id": "end",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_5",
+        "source_node_id": "ready",
+        "target_node_id": "ignore",
+        "condition_label": "NO"
+      },
+      {
+        "edge_id": "edge_6",
+        "source_node_id": "ignore",
+        "target_node_id": "relay",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_7",
+        "source_node_id": "relay",
+        "target_node_id": "doorbell",
+        "condition_label": null
+      }
+    ]
+  },
+  "raw_output": "{\n  \"diagram_id\": \"Break (18)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"start\",\n      \"label_text\": \"Start\",\n      \"shape_type\": \"circle\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"doorbell\",\n      \"label_text\": \"Door Bell\",\n      \"shape_type\": \"rounded rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"ready\",\n      \"label_text\": \"Ready to Get Up?\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"wakeup\",\n      \"label_text\": \"Wakeup\",\n      \"shape_type\": \"rounded rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"end\",\n      \"label_text\": \"End\",\n      \"shape_type\": \"circle\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"ignore\",\n      \"label_text\": \"Ignore bell\",\n      \"shape_type\": \"rounded rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"relay\",\n      \"label_text\": \"Relay\",\n      \"shape_type\": \"custom_d_shape\",\n      \"semantic_role\": \"Data\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"edge_1\",\n      \"source_node_id\": \"start\",\n      \"target_node_id\": \"doorbell\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_2\",\n      \"source_node_id\": \"doorbell\",\n      \"target_node_id\": \"ready\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_3\",\n      \"source_node_id\": \"ready\",\n      \"target_node_id\": \"wakeup\",\n      \"condition_label\": \"YES\"\n    },\n    {\n      \"edge_id\": \"edge_4\",\n      \"source_node_id\": \"wakeup\",\n      \"target_node_id\": \"end\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_5\",\n      \"source_node_id\": \"ready\",\n      \"target_node_id\": \"ignore\",\n      \"condition_label\": \"NO\"\n    },\n    {\n      \"edge_id\": \"edge_6\",\n      \"source_node_id\": \"ignore\",\n      \"target_node_id\": \"relay\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_7\",\n      \"source_node_id\": \"relay\",\n      \"target_node_id\": \"doorbell\",\n      \"condition_label\": null\n    }\n  ]\n}"
+}

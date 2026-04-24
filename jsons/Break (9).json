@@ -1,0 +1,157 @@
+{
+  "image_id": "Break (9)",
+  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Break (9).png",
+  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Break (9).tex",
+  "extracted_graph": {
+    "diagram_id": "Break (9)",
+    "nodes": [
+      {
+        "node_id": "start",
+        "label_text": "Purchase Process",
+        "shape_type": "rounded_rectangle",
+        "semantic_role": "Terminator"
+      },
+      {
+        "node_id": "fill",
+        "label_text": "Fill out details",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "approved",
+        "label_text": "Approved",
+        "shape_type": "diamond",
+        "semantic_role": "Decision"
+      },
+      {
+        "node_id": "req",
+        "label_text": "Purchase Requisition",
+        "shape_type": "tape",
+        "semantic_role": "Data"
+      },
+      {
+        "node_id": "cccash",
+        "label_text": "Credit Card\\or\\Cash?",
+        "shape_type": "diamond",
+        "semantic_role": "Decision"
+      },
+      {
+        "node_id": "indep",
+        "label_text": "Is it an\\Independent\\Contractor?",
+        "shape_type": "diamond",
+        "semantic_role": "Decision"
+      },
+      {
+        "node_id": "enter",
+        "label_text": "Enter card number",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "obtain",
+        "label_text": "Obtain P.O from\\Controller",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "give",
+        "label_text": "Give your details",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "ccpr",
+        "label_text": "Invoice CCPR",
+        "shape_type": "tape",
+        "semantic_role": "Data"
+      },
+      {
+        "node_id": "invoice",
+        "label_text": "Invoice",
+        "shape_type": "tape",
+        "semantic_role": "Data"
+      },
+      {
+        "node_id": "doc_app",
+        "label_text": "Documents to\\Controller for Approval",
+        "shape_type": "rounded_rectangle",
+        "semantic_role": "Terminator"
+      }
+    ],
+    "edges": [
+      {
+        "edge_id": "edge_1",
+        "source_node_id": "start",
+        "target_node_id": "fill",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_2",
+        "source_node_id": "fill",
+        "target_node_id": "approved",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_3",
+        "source_node_id": "approved",
+        "target_node_id": "req",
+        "condition_label": "NO"
+      },
+      {
+        "edge_id": "edge_4",
+        "source_node_id": "approved",
+        "target_node_id": "cccash",
+        "condition_label": "YES"
+      },
+      {
+        "edge_id": "edge_5",
+        "source_node_id": "cccash",
+        "target_node_id": "indep",
+        "condition_label": "Cash"
+      },
+      {
+        "edge_id": "edge_6",
+        "source_node_id": "cccash",
+        "target_node_id": "enter",
+        "condition_label": "Credit Card"
+      },
+      {
+        "edge_id": "edge_7",
+        "source_node_id": "indep",
+        "target_node_id": "give",
+        "condition_label": "YES"
+      },
+      {
+        "edge_id": "edge_8",
+        "source_node_id": "indep",
+        "target_node_id": "obtain",
+        "condition_label": "NO"
+      },
+      {
+        "edge_id": "edge_9",
+        "source_node_id": "obtain",
+        "target_node_id": "invoice",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_10",
+        "source_node_id": "enter",
+        "target_node_id": "ccpr",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_11",
+        "source_node_id": "ccpr",
+        "target_node_id": "doc_app",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_12",
+        "source_node_id": "invoice",
+        "target_node_id": "doc_app",
+        "condition_label": "To Controller"
+      }
+    ]
+  },
+  "raw_output": "{\n  \"diagram_id\": \"Break (9)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"start\",\n      \"label_text\": \"Purchase Process\",\n      \"shape_type\": \"rounded_rectangle\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"fill\",\n      \"label_text\": \"Fill out details\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"approved\",\n      \"label_text\": \"Approved\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"req\",\n      \"label_text\": \"Purchase Requisition\",\n      \"shape_type\": \"tape\",\n      \"semantic_role\": \"Data\"\n    },\n    {\n      \"node_id\": \"cccash\",\n      \"label_text\": \"Credit Card\\\\or\\\\Cash?\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"indep\",\n      \"label_text\": \"Is it an\\\\Independent\\\\Contractor?\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"enter\",\n      \"label_text\": \"Enter card number\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"obtain\",\n      \"label_text\": \"Obtain P.O from\\\\Controller\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"give\",\n      \"label_text\": \"Give your details\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"ccpr\",\n      \"label_text\": \"Invoice CCPR\",\n      \"shape_type\": \"tape\",\n      \"semantic_role\": \"Data\"\n    },\n    {\n      \"node_id\": \"invoice\",\n      \"label_text\": \"Invoice\",\n      \"shape_type\": \"tape\",\n      \"semantic_role\": \"Data\"\n    },\n    {\n      \"node_id\": \"doc_app\",\n      \"label_text\": \"Documents to\\\\Controller for Approval\",\n      \"shape_type\": \"rounded_rectangle\",\n      \"semantic_role\": \"Terminator\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"edge_1\",\n      \"source_node_id\": \"start\",\n      \"target_node_id\": \"fill\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_2\",\n      \"source_node_id\": \"fill\",\n      \"target_node_id\": \"approved\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_3\",\n      \"source_node_id\": \"approved\",\n      \"target_node_id\": \"req\",\n      \"condition_label\": \"NO\"\n    },\n    {\n      \"edge_id\": \"edge_4\",\n      \"source_node_id\": \"approved\",\n      \"target_node_id\": \"cccash\",\n      \"condition_label\": \"YES\"\n    },\n    {\n      \"edge_id\": \"edge_5\",\n      \"source_node_id\": \"cccash\",\n      \"target_node_id\": \"indep\",\n      \"condition_label\": \"Cash\"\n    },\n    {\n      \"edge_id\": \"edge_6\",\n      \"source_node_id\": \"cccash\",\n      \"target_node_id\": \"enter\",\n      \"condition_label\": \"Credit Card\"\n    },\n    {\n      \"edge_id\": \"edge_7\",\n      \"source_node_id\": \"indep\",\n      \"target_node_id\": \"give\",\n      \"condition_label\": \"YES\"\n    },\n    {\n      \"edge_id\": \"edge_8\",\n      \"source_node_id\": \"indep\",\n      \"target_node_id\": \"obtain\",\n      \"condition_label\": \"NO\"\n    },\n    {\n      \"edge_id\": \"edge_9\",\n      \"source_node_id\": \"obtain\",\n      \"target_node_id\": \"invoice\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_10\",\n      \"source_node_id\": \"enter\",\n      \"target_node_id\": \"ccpr\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_11\",\n      \"source_node_id\": \"ccpr\",\n      \"target_node_id\": \"doc_app\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_12\",\n      \"source_node_id\": \"invoice\",\n      \"target_node_id\": \"doc_app\",\n      \"condition_label\": \"To Controller\"\n    }\n  ]\n}"
+}

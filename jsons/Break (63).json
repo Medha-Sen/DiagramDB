@@ -1,0 +1,103 @@
+{
+  "image_id": "Break (63)",
+  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Break (63).png",
+  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Break (63).tex",
+  "extracted_graph": {
+    "diagram_id": "Break (63)",
+    "nodes": [
+      {
+        "node_id": "start",
+        "label_text": "Start",
+        "shape_type": "rounded_rectangle",
+        "semantic_role": "Terminator"
+      },
+      {
+        "node_id": "q1",
+        "label_text": "Does the\\TV turn\\on?",
+        "shape_type": "diamond",
+        "semantic_role": "Decision"
+      },
+      {
+        "node_id": "q2",
+        "label_text": "Are there any\\error messages?",
+        "shape_type": "diamond",
+        "semantic_role": "Decision"
+      },
+      {
+        "node_id": "q3",
+        "label_text": "Is the TV\\power light on?",
+        "shape_type": "diamond",
+        "semantic_role": "Decision"
+      },
+      {
+        "node_id": "search",
+        "label_text": "Perform a\\search for the\\error\\message",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "fine",
+        "label_text": "TV\\is fine",
+        "shape_type": "rounded_rectangle",
+        "semantic_role": "Terminator"
+      },
+      {
+        "node_id": "turnon",
+        "label_text": "Turn the\\TV\\monitor on",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "check",
+        "label_text": "Check the\\TV\\power cord",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      }
+    ],
+    "edges": [
+      {
+        "edge_id": "edge_1",
+        "source_node_id": "start",
+        "target_node_id": "q1",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_2",
+        "source_node_id": "q1",
+        "target_node_id": "q2",
+        "condition_label": "Yes"
+      },
+      {
+        "edge_id": "edge_3",
+        "source_node_id": "q1",
+        "target_node_id": "q3",
+        "condition_label": "No"
+      },
+      {
+        "edge_id": "edge_4",
+        "source_node_id": "q2",
+        "target_node_id": "search",
+        "condition_label": "Yes"
+      },
+      {
+        "edge_id": "edge_5",
+        "source_node_id": "q2",
+        "target_node_id": "fine",
+        "condition_label": "No"
+      },
+      {
+        "edge_id": "edge_6",
+        "source_node_id": "q3",
+        "target_node_id": "turnon",
+        "condition_label": "Yes"
+      },
+      {
+        "edge_id": "edge_7",
+        "source_node_id": "q3",
+        "target_node_id": "check",
+        "condition_label": "No"
+      }
+    ]
+  },
+  "raw_output": "{\n  \"diagram_id\": \"Break (63)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"start\",\n      \"label_text\": \"Start\",\n      \"shape_type\": \"rounded_rectangle\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"q1\",\n      \"label_text\": \"Does the\\\\TV turn\\\\on?\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"q2\",\n      \"label_text\": \"Are there any\\\\error messages?\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"q3\",\n      \"label_text\": \"Is the TV\\\\power light on?\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"search\",\n      \"label_text\": \"Perform a\\\\search for the\\\\error\\\\message\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"fine\",\n      \"label_text\": \"TV\\\\is fine\",\n      \"shape_type\": \"rounded_rectangle\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"turnon\",\n      \"label_text\": \"Turn the\\\\TV\\\\monitor on\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"check\",\n      \"label_text\": \"Check the\\\\TV\\\\power cord\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"edge_1\",\n      \"source_node_id\": \"start\",\n      \"target_node_id\": \"q1\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_2\",\n      \"source_node_id\": \"q1\",\n      \"target_node_id\": \"q2\",\n      \"condition_label\": \"Yes\"\n    },\n    {\n      \"edge_id\": \"edge_3\",\n      \"source_node_id\": \"q1\",\n      \"target_node_id\": \"q3\",\n      \"condition_label\": \"No\"\n    },\n    {\n      \"edge_id\": \"edge_4\",\n      \"source_node_id\": \"q2\",\n      \"target_node_id\": \"search\",\n      \"condition_label\": \"Yes\"\n    },\n    {\n      \"edge_id\": \"edge_5\",\n      \"source_node_id\": \"q2\",\n      \"target_node_id\": \"fine\",\n      \"condition_label\": \"No\"\n    },\n    {\n      \"edge_id\": \"edge_6\",\n      \"source_node_id\": \"q3\",\n      \"target_node_id\": \"turnon\",\n      \"condition_label\": \"Yes\"\n    },\n    {\n      \"edge_id\": \"edge_7\",\n      \"source_node_id\": \"q3\",\n      \"target_node_id\": \"check\",\n      \"condition_label\": \"No\"\n    }\n  ]\n}"
+}

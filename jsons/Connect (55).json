@@ -1,0 +1,109 @@
+{
+  "image_id": "Connect (55)",
+  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Connect (55).png",
+  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Connect (55).tex",
+  "extracted_graph": {
+    "diagram_id": "Connect (55)",
+    "nodes": [
+      {
+        "node_id": "start",
+        "label_text": "START",
+        "shape_type": "rounded rectangle",
+        "semantic_role": "Terminator"
+      },
+      {
+        "node_id": "init",
+        "label_text": "count = 1",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "check",
+        "label_text": "count <= 3",
+        "shape_type": "diamond",
+        "semantic_role": "Decision"
+      },
+      {
+        "node_id": "input",
+        "label_text": "INPUT",
+        "shape_type": "trapezium",
+        "semantic_role": "Data"
+      },
+      {
+        "node_id": "calc",
+        "label_text": "p * n * r / 100",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "print",
+        "label_text": "PRINT",
+        "shape_type": "trapezium",
+        "semantic_role": "Data"
+      },
+      {
+        "node_id": "inc",
+        "label_text": "count = count + 1",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "stop",
+        "label_text": "STOP",
+        "shape_type": "rounded rectangle",
+        "semantic_role": "Terminator"
+      }
+    ],
+    "edges": [
+      {
+        "edge_id": "edge_1",
+        "source_node_id": "start",
+        "target_node_id": "init",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_2",
+        "source_node_id": "init",
+        "target_node_id": "check",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_3",
+        "source_node_id": "check",
+        "target_node_id": "input",
+        "condition_label": "Yes"
+      },
+      {
+        "edge_id": "edge_4",
+        "source_node_id": "input",
+        "target_node_id": "calc",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_5",
+        "source_node_id": "calc",
+        "target_node_id": "print",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_6",
+        "source_node_id": "print",
+        "target_node_id": "inc",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_7",
+        "source_node_id": "inc",
+        "target_node_id": "check",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_8",
+        "source_node_id": "check",
+        "target_node_id": "stop",
+        "condition_label": "No"
+      }
+    ]
+  },
+  "raw_output": "{\n  \"diagram_id\": \"Connect (55)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"start\",\n      \"label_text\": \"START\",\n      \"shape_type\": \"rounded rectangle\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"init\",\n      \"label_text\": \"count = 1\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"check\",\n      \"label_text\": \"count <= 3\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"input\",\n      \"label_text\": \"INPUT\",\n      \"shape_type\": \"trapezium\",\n      \"semantic_role\": \"Data\"\n    },\n    {\n      \"node_id\": \"calc\",\n      \"label_text\": \"p * n * r / 100\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"print\",\n      \"label_text\": \"PRINT\",\n      \"shape_type\": \"trapezium\",\n      \"semantic_role\": \"Data\"\n    },\n    {\n      \"node_id\": \"inc\",\n      \"label_text\": \"count = count + 1\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"stop\",\n      \"label_text\": \"STOP\",\n      \"shape_type\": \"rounded rectangle\",\n      \"semantic_role\": \"Terminator\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"edge_1\",\n      \"source_node_id\": \"start\",\n      \"target_node_id\": \"init\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_2\",\n      \"source_node_id\": \"init\",\n      \"target_node_id\": \"check\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_3\",\n      \"source_node_id\": \"check\",\n      \"target_node_id\": \"input\",\n      \"condition_label\": \"Yes\"\n    },\n    {\n      \"edge_id\": \"edge_4\",\n      \"source_node_id\": \"input\",\n      \"target_node_id\": \"calc\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_5\",\n      \"source_node_id\": \"calc\",\n      \"target_node_id\": \"print\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_6\",\n      \"source_node_id\": \"print\",\n      \"target_node_id\": \"inc\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_7\",\n      \"source_node_id\": \"inc\",\n      \"target_node_id\": \"check\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_8\",\n      \"source_node_id\": \"check\",\n      \"target_node_id\": \"stop\",\n      \"condition_label\": \"No\"\n    }\n  ]\n}"
+}

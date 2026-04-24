@@ -1,0 +1,157 @@
+{
+  "image_id": "Break (6)",
+  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Break (6).png",
+  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Break (6).tex",
+  "extracted_graph": {
+    "diagram_id": "Break (6)",
+    "nodes": [
+      {
+        "node_id": "consulting",
+        "label_text": "Customer\\Consulting and\\Quotation",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "deal",
+        "label_text": "Deal?",
+        "shape_type": "diamond",
+        "semantic_role": "Decision"
+      },
+      {
+        "node_id": "gohome",
+        "label_text": "Go home",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "invoice",
+        "label_text": "Invoice",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "shipping",
+        "label_text": "Shipping",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "custom",
+        "label_text": "Custom\\Clearance",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "paymode",
+        "label_text": "Payment\\mode",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "delivery",
+        "label_text": "Delivery",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "service",
+        "label_text": "Service\\Payment",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "payforeign",
+        "label_text": "Pay Foreign\\Exchange?",
+        "shape_type": "diamond",
+        "semantic_role": "Decision"
+      },
+      {
+        "node_id": "payment",
+        "label_text": "Payment",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "stop",
+        "label_text": "Stop",
+        "shape_type": "rectangle",
+        "semantic_role": "Terminator"
+      }
+    ],
+    "edges": [
+      {
+        "edge_id": "edge_1",
+        "source_node_id": "consulting",
+        "target_node_id": "deal",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_2",
+        "source_node_id": "deal",
+        "target_node_id": "gohome",
+        "condition_label": "No"
+      },
+      {
+        "edge_id": "edge_3",
+        "source_node_id": "deal",
+        "target_node_id": "invoice",
+        "condition_label": "Yes"
+      },
+      {
+        "edge_id": "edge_4",
+        "source_node_id": "invoice",
+        "target_node_id": "shipping",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_5",
+        "source_node_id": "shipping",
+        "target_node_id": "custom",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_6",
+        "source_node_id": "custom",
+        "target_node_id": "paymode",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_7",
+        "source_node_id": "paymode",
+        "target_node_id": "delivery",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_8",
+        "source_node_id": "delivery",
+        "target_node_id": "service",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_9",
+        "source_node_id": "service",
+        "target_node_id": "payforeign",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_10",
+        "source_node_id": "payforeign",
+        "target_node_id": "payment",
+        "condition_label": "Yes"
+      },
+      {
+        "edge_id": "edge_11",
+        "source_node_id": "payment",
+        "target_node_id": "stop",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_12",
+        "source_node_id": "payforeign",
+        "target_node_id": "stop",
+        "condition_label": "No"
+      }
+    ]
+  },
+  "raw_output": "{\n  \"diagram_id\": \"Break (6)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"consulting\",\n      \"label_text\": \"Customer\\\\Consulting and\\\\Quotation\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"deal\",\n      \"label_text\": \"Deal?\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"gohome\",\n      \"label_text\": \"Go home\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"invoice\",\n      \"label_text\": \"Invoice\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"shipping\",\n      \"label_text\": \"Shipping\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"custom\",\n      \"label_text\": \"Custom\\\\Clearance\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"paymode\",\n      \"label_text\": \"Payment\\\\mode\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"delivery\",\n      \"label_text\": \"Delivery\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"service\",\n      \"label_text\": \"Service\\\\Payment\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"payforeign\",\n      \"label_text\": \"Pay Foreign\\\\Exchange?\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"payment\",\n      \"label_text\": \"Payment\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"stop\",\n      \"label_text\": \"Stop\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Terminator\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"edge_1\",\n      \"source_node_id\": \"consulting\",\n      \"target_node_id\": \"deal\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_2\",\n      \"source_node_id\": \"deal\",\n      \"target_node_id\": \"gohome\",\n      \"condition_label\": \"No\"\n    },\n    {\n      \"edge_id\": \"edge_3\",\n      \"source_node_id\": \"deal\",\n      \"target_node_id\": \"invoice\",\n      \"condition_label\": \"Yes\"\n    },\n    {\n      \"edge_id\": \"edge_4\",\n      \"source_node_id\": \"invoice\",\n      \"target_node_id\": \"shipping\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_5\",\n      \"source_node_id\": \"shipping\",\n      \"target_node_id\": \"custom\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_6\",\n      \"source_node_id\": \"custom\",\n      \"target_node_id\": \"paymode\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_7\",\n      \"source_node_id\": \"paymode\",\n      \"target_node_id\": \"delivery\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_8\",\n      \"source_node_id\": \"delivery\",\n      \"target_node_id\": \"service\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_9\",\n      \"source_node_id\": \"service\",\n      \"target_node_id\": \"payforeign\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_10\",\n      \"source_node_id\": \"payforeign\",\n      \"target_node_id\": \"payment\",\n      \"condition_label\": \"Yes\"\n    },\n    {\n      \"edge_id\": \"edge_11\",\n      \"source_node_id\": \"payment\",\n      \"target_node_id\": \"stop\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_12\",\n      \"source_node_id\": \"payforeign\",\n      \"target_node_id\": \"stop\",\n      \"condition_label\": \"No\"\n    }\n  ]\n}"
+}

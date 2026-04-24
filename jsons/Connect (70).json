@@ -1,0 +1,151 @@
+{
+  "image_id": "Connect (70)",
+  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Connect (70).png",
+  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Connect (70).tex",
+  "extracted_graph": {
+    "diagram_id": "Connect (70)",
+    "nodes": [
+      {
+        "node_id": "start",
+        "label_text": "Start",
+        "shape_type": "rectangle",
+        "semantic_role": "Terminator"
+      },
+      {
+        "node_id": "cat",
+        "label_text": "Create a store category",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "type",
+        "label_text": "Create a store type",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "store",
+        "label_text": "Create a store",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "p1",
+        "label_text": "Add items to a store",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "p2",
+        "label_text": "Paper work",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "p3",
+        "label_text": "Raise an indent",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "p4",
+        "label_text": "Create a purchase order",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "p5",
+        "label_text": "End",
+        "shape_type": "rectangle",
+        "semantic_role": "Terminator"
+      },
+      {
+        "node_id": "s1",
+        "label_text": "Create an item category",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "s2",
+        "label_text": "Add items to a store",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "s3",
+        "label_text": "Bill Check",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      }
+    ],
+    "edges": [
+      {
+        "edge_id": "edge_1",
+        "source_node_id": "start",
+        "target_node_id": "cat",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_2",
+        "source_node_id": "cat",
+        "target_node_id": "type",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_3",
+        "source_node_id": "type",
+        "target_node_id": "store",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_4",
+        "source_node_id": "store",
+        "target_node_id": "p1",
+        "condition_label": "Purchase"
+      },
+      {
+        "edge_id": "edge_5",
+        "source_node_id": "store",
+        "target_node_id": "s1",
+        "condition_label": "Sales"
+      },
+      {
+        "edge_id": "edge_6",
+        "source_node_id": "p1",
+        "target_node_id": "p2",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_7",
+        "source_node_id": "p2",
+        "target_node_id": "p3",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_8",
+        "source_node_id": "p3",
+        "target_node_id": "p4",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_9",
+        "source_node_id": "p4",
+        "target_node_id": "p5",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_10",
+        "source_node_id": "s1",
+        "target_node_id": "s2",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_11",
+        "source_node_id": "s2",
+        "target_node_id": "s3",
+        "condition_label": null
+      }
+    ]
+  },
+  "raw_output": "{\n  \"diagram_id\": \"Connect (70)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"start\",\n      \"label_text\": \"Start\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"cat\",\n      \"label_text\": \"Create a store category\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"type\",\n      \"label_text\": \"Create a store type\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"store\",\n      \"label_text\": \"Create a store\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"p1\",\n      \"label_text\": \"Add items to a store\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"p2\",\n      \"label_text\": \"Paper work\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"p3\",\n      \"label_text\": \"Raise an indent\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"p4\",\n      \"label_text\": \"Create a purchase order\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"p5\",\n      \"label_text\": \"End\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"s1\",\n      \"label_text\": \"Create an item category\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"s2\",\n      \"label_text\": \"Add items to a store\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"s3\",\n      \"label_text\": \"Bill Check\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"edge_1\",\n      \"source_node_id\": \"start\",\n      \"target_node_id\": \"cat\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_2\",\n      \"source_node_id\": \"cat\",\n      \"target_node_id\": \"type\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_3\",\n      \"source_node_id\": \"type\",\n      \"target_node_id\": \"store\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_4\",\n      \"source_node_id\": \"store\",\n      \"target_node_id\": \"p1\",\n      \"condition_label\": \"Purchase\"\n    },\n    {\n      \"edge_id\": \"edge_5\",\n      \"source_node_id\": \"store\",\n      \"target_node_id\": \"s1\",\n      \"condition_label\": \"Sales\"\n    },\n    {\n      \"edge_id\": \"edge_6\",\n      \"source_node_id\": \"p1\",\n      \"target_node_id\": \"p2\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_7\",\n      \"source_node_id\": \"p2\",\n      \"target_node_id\": \"p3\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_8\",\n      \"source_node_id\": \"p3\",\n      \"target_node_id\": \"p4\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_9\",\n      \"source_node_id\": \"p4\",\n      \"target_node_id\": \"p5\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_10\",\n      \"source_node_id\": \"s1\",\n      \"target_node_id\": \"s2\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_11\",\n      \"source_node_id\": \"s2\",\n      \"target_node_id\": \"s3\",\n      \"condition_label\": null\n    }\n  ]\n}"
+}

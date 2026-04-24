@@ -1,0 +1,151 @@
+{
+  "image_id": "Break (8)",
+  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Break (8).png",
+  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Break (8).tex",
+  "extracted_graph": {
+    "diagram_id": "Break (8)",
+    "nodes": [
+      {
+        "node_id": "start",
+        "label_text": "Start",
+        "shape_type": "rounded_rectangle",
+        "semantic_role": "Terminator"
+      },
+      {
+        "node_id": "homepage",
+        "label_text": "homepage",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "account",
+        "label_text": "have\\an account",
+        "shape_type": "diamond",
+        "semantic_role": "Decision"
+      },
+      {
+        "node_id": "signup",
+        "label_text": "Sign up",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "giveinfo",
+        "label_text": "Give info",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "login",
+        "label_text": "Log in",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "submit",
+        "label_text": "Submit",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "enter",
+        "label_text": "Enter e-mail\\and password",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "auth",
+        "label_text": "Authentication",
+        "shape_type": "diamond",
+        "semantic_role": "Decision"
+      },
+      {
+        "node_id": "loggedin",
+        "label_text": "loged in to the\\system",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "end",
+        "label_text": "end",
+        "shape_type": "rounded_rectangle",
+        "semantic_role": "Terminator"
+      }
+    ],
+    "edges": [
+      {
+        "edge_id": "edge_1",
+        "source_node_id": "start",
+        "target_node_id": "homepage",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_2",
+        "source_node_id": "homepage",
+        "target_node_id": "account",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_3",
+        "source_node_id": "account",
+        "target_node_id": "signup",
+        "condition_label": "No"
+      },
+      {
+        "edge_id": "edge_4",
+        "source_node_id": "signup",
+        "target_node_id": "giveinfo",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_5",
+        "source_node_id": "giveinfo",
+        "target_node_id": "submit",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_6",
+        "source_node_id": "submit",
+        "target_node_id": "login",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_7",
+        "source_node_id": "account",
+        "target_node_id": "login",
+        "condition_label": "yes"
+      },
+      {
+        "edge_id": "edge_8",
+        "source_node_id": "login",
+        "target_node_id": "enter",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_9",
+        "source_node_id": "enter",
+        "target_node_id": "auth",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_10",
+        "source_node_id": "auth",
+        "target_node_id": "loggedin",
+        "condition_label": "yes"
+      },
+      {
+        "edge_id": "edge_11",
+        "source_node_id": "loggedin",
+        "target_node_id": "end",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_12",
+        "source_node_id": "auth",
+        "target_node_id": "login",
+        "condition_label": "no"
+      }
+    ]
+  },
+  "raw_output": "{\n  \"diagram_id\": \"Break (8)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"start\",\n      \"label_text\": \"Start\",\n      \"shape_type\": \"rounded_rectangle\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"homepage\",\n      \"label_text\": \"homepage\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"account\",\n      \"label_text\": \"have\\\\an account\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"signup\",\n      \"label_text\": \"Sign up\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"giveinfo\",\n      \"label_text\": \"Give info\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"login\",\n      \"label_text\": \"Log in\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"submit\",\n      \"label_text\": \"Submit\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"enter\",\n      \"label_text\": \"Enter e-mail\\\\and password\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"auth\",\n      \"label_text\": \"Authentication\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"loggedin\",\n      \"label_text\": \"loged in to the\\\\system\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"end\",\n      \"label_text\": \"end\",\n      \"shape_type\": \"rounded_rectangle\",\n      \"semantic_role\": \"Terminator\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"edge_1\",\n      \"source_node_id\": \"start\",\n      \"target_node_id\": \"homepage\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_2\",\n      \"source_node_id\": \"homepage\",\n      \"target_node_id\": \"account\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_3\",\n      \"source_node_id\": \"account\",\n      \"target_node_id\": \"signup\",\n      \"condition_label\": \"No\"\n    },\n    {\n      \"edge_id\": \"edge_4\",\n      \"source_node_id\": \"signup\",\n      \"target_node_id\": \"giveinfo\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_5\",\n      \"source_node_id\": \"giveinfo\",\n      \"target_node_id\": \"submit\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_6\",\n      \"source_node_id\": \"submit\",\n      \"target_node_id\": \"login\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_7\",\n      \"source_node_id\": \"account\",\n      \"target_node_id\": \"login\",\n      \"condition_label\": \"yes\"\n    },\n    {\n      \"edge_id\": \"edge_8\",\n      \"source_node_id\": \"login\",\n      \"target_node_id\": \"enter\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_9\",\n      \"source_node_id\": \"enter\",\n      \"target_node_id\": \"auth\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_10\",\n      \"source_node_id\": \"auth\",\n      \"target_node_id\": \"loggedin\",\n      \"condition_label\": \"yes\"\n    },\n    {\n      \"edge_id\": \"edge_11\",\n      \"source_node_id\": \"loggedin\",\n      \"target_node_id\": \"end\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_12\",\n      \"source_node_id\": \"auth\",\n      \"target_node_id\": \"login\",\n      \"condition_label\": \"no\"\n    }\n  ]\n}"
+}

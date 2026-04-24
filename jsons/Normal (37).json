@@ -1,0 +1,103 @@
+{
+  "image_id": "Normal (37)",
+  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Normal (37).png",
+  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Normal (37).tex",
+  "extracted_graph": {
+    "diagram_id": "Normal (37)",
+    "nodes": [
+      {
+        "node_id": "start",
+        "label_text": "Start",
+        "shape_type": "rectangle",
+        "semantic_role": "Terminator"
+      },
+      {
+        "node_id": "dec1",
+        "label_text": "Are you happy?",
+        "shape_type": "diamond",
+        "semantic_role": "Decision"
+      },
+      {
+        "node_id": "make",
+        "label_text": "Make others happy",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "stop",
+        "label_text": "Stop",
+        "shape_type": "rectangle",
+        "semantic_role": "Terminator"
+      },
+      {
+        "node_id": "dec2",
+        "label_text": "Want to be happy?",
+        "shape_type": "diamond",
+        "semantic_role": "Decision"
+      },
+      {
+        "node_id": "ask",
+        "label_text": "Ask someone",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "allover",
+        "label_text": "all over",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      }
+    ],
+    "edges": [
+      {
+        "edge_id": "edge_1",
+        "source_node_id": "start",
+        "target_node_id": "dec1",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_2",
+        "source_node_id": "dec1",
+        "target_node_id": "dec2",
+        "condition_label": "No"
+      },
+      {
+        "edge_id": "edge_3",
+        "source_node_id": "dec2",
+        "target_node_id": "allover",
+        "condition_label": "No"
+      },
+      {
+        "edge_id": "edge_4",
+        "source_node_id": "dec1",
+        "target_node_id": "make",
+        "condition_label": "Yes"
+      },
+      {
+        "edge_id": "edge_5",
+        "source_node_id": "dec2",
+        "target_node_id": "ask",
+        "condition_label": "Yes"
+      },
+      {
+        "edge_id": "edge_6",
+        "source_node_id": "make",
+        "target_node_id": "stop",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_7",
+        "source_node_id": "ask",
+        "target_node_id": "stop",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_8",
+        "source_node_id": "allover",
+        "target_node_id": "start",
+        "condition_label": null
+      }
+    ]
+  },
+  "raw_output": "{\n  \"diagram_id\": \"Normal (37)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"start\",\n      \"label_text\": \"Start\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"dec1\",\n      \"label_text\": \"Are you happy?\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"make\",\n      \"label_text\": \"Make others happy\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"stop\",\n      \"label_text\": \"Stop\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"dec2\",\n      \"label_text\": \"Want to be happy?\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"ask\",\n      \"label_text\": \"Ask someone\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"allover\",\n      \"label_text\": \"all over\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"edge_1\",\n      \"source_node_id\": \"start\",\n      \"target_node_id\": \"dec1\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_2\",\n      \"source_node_id\": \"dec1\",\n      \"target_node_id\": \"dec2\",\n      \"condition_label\": \"No\"\n    },\n    {\n      \"edge_id\": \"edge_3\",\n      \"source_node_id\": \"dec2\",\n      \"target_node_id\": \"allover\",\n      \"condition_label\": \"No\"\n    },\n    {\n      \"edge_id\": \"edge_4\",\n      \"source_node_id\": \"dec1\",\n      \"target_node_id\": \"make\",\n      \"condition_label\": \"Yes\"\n    },\n    {\n      \"edge_id\": \"edge_5\",\n      \"source_node_id\": \"dec2\",\n      \"target_node_id\": \"ask\",\n      \"condition_label\": \"Yes\"\n    },\n    {\n      \"edge_id\": \"edge_6\",\n      \"source_node_id\": \"make\",\n      \"target_node_id\": \"stop\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_7\",\n      \"source_node_id\": \"ask\",\n      \"target_node_id\": \"stop\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_8\",\n      \"source_node_id\": \"allover\",\n      \"target_node_id\": \"start\",\n      \"condition_label\": null\n    }\n  ]\n}"
+}

@@ -1,0 +1,85 @@
+{
+  "image_id": "Connect (75)",
+  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Connect (75).png",
+  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Connect (75).tex",
+  "extracted_graph": {
+    "diagram_id": "Connect (75)",
+    "nodes": [
+      {
+        "node_id": "begin",
+        "label_text": "Begin",
+        "shape_type": "rounded_rectangle",
+        "semantic_role": "Terminator"
+      },
+      {
+        "node_id": "input",
+        "label_text": "Input Total\\ Score",
+        "shape_type": "trapezium",
+        "semantic_role": "Data"
+      },
+      {
+        "node_id": "dec",
+        "label_text": "If total score $>$\\ 800",
+        "shape_type": "diamond",
+        "semantic_role": "Decision"
+      },
+      {
+        "node_id": "bad",
+        "label_text": "Bad Work",
+        "shape_type": "trapezium",
+        "semantic_role": "Data"
+      },
+      {
+        "node_id": "good",
+        "label_text": "Good Work",
+        "shape_type": "trapezium",
+        "semantic_role": "Data"
+      },
+      {
+        "node_id": "end",
+        "label_text": "End",
+        "shape_type": "rounded_rectangle",
+        "semantic_role": "Terminator"
+      }
+    ],
+    "edges": [
+      {
+        "edge_id": "edge_1",
+        "source_node_id": "begin",
+        "target_node_id": "input",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_2",
+        "source_node_id": "input",
+        "target_node_id": "dec",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_3",
+        "source_node_id": "dec",
+        "target_node_id": "bad",
+        "condition_label": "No"
+      },
+      {
+        "edge_id": "edge_4",
+        "source_node_id": "dec",
+        "target_node_id": "good",
+        "condition_label": "Yes"
+      },
+      {
+        "edge_id": "edge_5",
+        "source_node_id": "bad",
+        "target_node_id": "end",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_6",
+        "source_node_id": "good",
+        "target_node_id": "end",
+        "condition_label": null
+      }
+    ]
+  },
+  "raw_output": "{\n  \"diagram_id\": \"Connect (75)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"begin\",\n      \"label_text\": \"Begin\",\n      \"shape_type\": \"rounded_rectangle\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"input\",\n      \"label_text\": \"Input Total\\\\ Score\",\n      \"shape_type\": \"trapezium\",\n      \"semantic_role\": \"Data\"\n    },\n    {\n      \"node_id\": \"dec\",\n      \"label_text\": \"If total score $>$\\\\ 800\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"bad\",\n      \"label_text\": \"Bad Work\",\n      \"shape_type\": \"trapezium\",\n      \"semantic_role\": \"Data\"\n    },\n    {\n      \"node_id\": \"good\",\n      \"label_text\": \"Good Work\",\n      \"shape_type\": \"trapezium\",\n      \"semantic_role\": \"Data\"\n    },\n    {\n      \"node_id\": \"end\",\n      \"label_text\": \"End\",\n      \"shape_type\": \"rounded_rectangle\",\n      \"semantic_role\": \"Terminator\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"edge_1\",\n      \"source_node_id\": \"begin\",\n      \"target_node_id\": \"input\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_2\",\n      \"source_node_id\": \"input\",\n      \"target_node_id\": \"dec\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_3\",\n      \"source_node_id\": \"dec\",\n      \"target_node_id\": \"bad\",\n      \"condition_label\": \"No\"\n    },\n    {\n      \"edge_id\": \"edge_4\",\n      \"source_node_id\": \"dec\",\n      \"target_node_id\": \"good\",\n      \"condition_label\": \"Yes\"\n    },\n    {\n      \"edge_id\": \"edge_5\",\n      \"source_node_id\": \"bad\",\n      \"target_node_id\": \"end\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_6\",\n      \"source_node_id\": \"good\",\n      \"target_node_id\": \"end\",\n      \"condition_label\": null\n    }\n  ]\n}"
+}

@@ -1,0 +1,91 @@
+{
+  "image_id": "Normal (205)",
+  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Normal (205).png",
+  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Normal (205).tex",
+  "extracted_graph": {
+    "diagram_id": "Normal (205)",
+    "nodes": [
+      {
+        "node_id": "encoder",
+        "label_text": "Encoder",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "chencoder",
+        "label_text": "Channel\\Encoder",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "modulation",
+        "label_text": "Modulation",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "amplifier",
+        "label_text": "Amplifier",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "demodulation",
+        "label_text": "Demodulation",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "chdecoder",
+        "label_text": "Channel\\Decoder",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "decoder",
+        "label_text": "Decoder",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      }
+    ],
+    "edges": [
+      {
+        "edge_id": "edge_1",
+        "source_node_id": "encoder",
+        "target_node_id": "chencoder",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_2",
+        "source_node_id": "chencoder",
+        "target_node_id": "modulation",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_3",
+        "source_node_id": "modulation",
+        "target_node_id": "amplifier",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_4",
+        "source_node_id": "amplifier",
+        "target_node_id": "demodulation",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_5",
+        "source_node_id": "demodulation",
+        "target_node_id": "chdecoder",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_6",
+        "source_node_id": "chdecoder",
+        "target_node_id": "decoder",
+        "condition_label": null
+      }
+    ]
+  },
+  "raw_output": "{\n  \"diagram_id\": \"Normal (205)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"encoder\",\n      \"label_text\": \"Encoder\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"chencoder\",\n      \"label_text\": \"Channel\\\\Encoder\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"modulation\",\n      \"label_text\": \"Modulation\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"amplifier\",\n      \"label_text\": \"Amplifier\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"demodulation\",\n      \"label_text\": \"Demodulation\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"chdecoder\",\n      \"label_text\": \"Channel\\\\Decoder\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"decoder\",\n      \"label_text\": \"Decoder\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"edge_1\",\n      \"source_node_id\": \"encoder\",\n      \"target_node_id\": \"chencoder\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_2\",\n      \"source_node_id\": \"chencoder\",\n      \"target_node_id\": \"modulation\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_3\",\n      \"source_node_id\": \"modulation\",\n      \"target_node_id\": \"amplifier\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_4\",\n      \"source_node_id\": \"amplifier\",\n      \"target_node_id\": \"demodulation\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_5\",\n      \"source_node_id\": \"demodulation\",\n      \"target_node_id\": \"chdecoder\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_6\",\n      \"source_node_id\": \"chdecoder\",\n      \"target_node_id\": \"decoder\",\n      \"condition_label\": null\n    }\n  ]\n}"
+}

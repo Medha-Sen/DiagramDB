@@ -1,0 +1,109 @@
+{
+  "image_id": "Break (17)",
+  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Break (17).png",
+  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Break (17).tex",
+  "extracted_graph": {
+    "diagram_id": "Break (17)",
+    "nodes": [
+      {
+        "node_id": "newcase",
+        "label_text": "New case",
+        "shape_type": "pill",
+        "semantic_role": "Terminator"
+      },
+      {
+        "node_id": "retrieval",
+        "label_text": "Case retrieval",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "print",
+        "label_text": "Print Result",
+        "shape_type": "rectangle",
+        "semantic_role": "Terminator"
+      },
+      {
+        "node_id": "similar",
+        "label_text": "Similar cases",
+        "shape_type": "rectangle",
+        "semantic_role": "Data"
+      },
+      {
+        "node_id": "reuse",
+        "label_text": "Case reuse",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "update",
+        "label_text": "Case update",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "revise",
+        "label_text": "Case revise",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "casebase",
+        "label_text": "Case base",
+        "shape_type": "cylinder",
+        "semantic_role": "Data"
+      }
+    ],
+    "edges": [
+      {
+        "edge_id": "edge_1",
+        "source_node_id": "newcase",
+        "target_node_id": "retrieval",
+        "condition_label": "Input"
+      },
+      {
+        "edge_id": "edge_2",
+        "source_node_id": "casebase",
+        "target_node_id": "retrieval",
+        "condition_label": "Retrieve"
+      },
+      {
+        "edge_id": "edge_3",
+        "source_node_id": "retrieval",
+        "target_node_id": "similar",
+        "condition_label": "Obtain"
+      },
+      {
+        "edge_id": "edge_4",
+        "source_node_id": "similar",
+        "target_node_id": "reuse",
+        "condition_label": "Input"
+      },
+      {
+        "edge_id": "edge_5",
+        "source_node_id": "reuse",
+        "target_node_id": "print",
+        "condition_label": "Output"
+      },
+      {
+        "edge_id": "edge_6",
+        "source_node_id": "print",
+        "target_node_id": "revise",
+        "condition_label": "Evaluate"
+      },
+      {
+        "edge_id": "edge_7",
+        "source_node_id": "revise",
+        "target_node_id": "update",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_8",
+        "source_node_id": "update",
+        "target_node_id": "casebase",
+        "condition_label": "Store"
+      }
+    ]
+  },
+  "raw_output": "{\n  \"diagram_id\": \"Break (17)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"newcase\",\n      \"label_text\": \"New case\",\n      \"shape_type\": \"pill\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"retrieval\",\n      \"label_text\": \"Case retrieval\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"print\",\n      \"label_text\": \"Print Result\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"similar\",\n      \"label_text\": \"Similar cases\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Data\"\n    },\n    {\n      \"node_id\": \"reuse\",\n      \"label_text\": \"Case reuse\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"update\",\n      \"label_text\": \"Case update\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"revise\",\n      \"label_text\": \"Case revise\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"casebase\",\n      \"label_text\": \"Case base\",\n      \"shape_type\": \"cylinder\",\n      \"semantic_role\": \"Data\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"edge_1\",\n      \"source_node_id\": \"newcase\",\n      \"target_node_id\": \"retrieval\",\n      \"condition_label\": \"Input\"\n    },\n    {\n      \"edge_id\": \"edge_2\",\n      \"source_node_id\": \"casebase\",\n      \"target_node_id\": \"retrieval\",\n      \"condition_label\": \"Retrieve\"\n    },\n    {\n      \"edge_id\": \"edge_3\",\n      \"source_node_id\": \"retrieval\",\n      \"target_node_id\": \"similar\",\n      \"condition_label\": \"Obtain\"\n    },\n    {\n      \"edge_id\": \"edge_4\",\n      \"source_node_id\": \"similar\",\n      \"target_node_id\": \"reuse\",\n      \"condition_label\": \"Input\"\n    },\n    {\n      \"edge_id\": \"edge_5\",\n      \"source_node_id\": \"reuse\",\n      \"target_node_id\": \"print\",\n      \"condition_label\": \"Output\"\n    },\n    {\n      \"edge_id\": \"edge_6\",\n      \"source_node_id\": \"print\",\n      \"target_node_id\": \"revise\",\n      \"condition_label\": \"Evaluate\"\n    },\n    {\n      \"edge_id\": \"edge_7\",\n      \"source_node_id\": \"revise\",\n      \"target_node_id\": \"update\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_8\",\n      \"source_node_id\": \"update\",\n      \"target_node_id\": \"casebase\",\n      \"condition_label\": \"Store\"\n    }\n  ]\n}"
+}

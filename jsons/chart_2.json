@@ -1,0 +1,48 @@
+[
+  {
+    "chart_id": "chart_2",
+    "metadata": {
+      "title": "Number of participants per game",
+      "chart_type": "Pie",
+      "x_axis_label": null,
+      "y_axis_label": "Percentage (%)"
+    },
+    "data_points": [
+      {
+        "series": "Total",
+        "category": "Candyland",
+        "value": 23
+      },
+      {
+        "series": "Total",
+        "category": "Monopoly",
+        "value": 21
+      },
+      {
+        "series": "Total",
+        "category": "Twister",
+        "value": 19
+      },
+      {
+        "series": "Total",
+        "category": "Chess",
+        "value": 15
+      },
+      {
+        "series": "Total",
+        "category": "Jenga",
+        "value": 11
+      },
+      {
+        "series": "Total",
+        "category": "Poker",
+        "value": 7
+      },
+      {
+        "series": "Total",
+        "category": "Uno",
+        "value": 4
+      }
+    ]
+  }
+]

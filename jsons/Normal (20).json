@@ -1,0 +1,55 @@
+{
+  "image_id": "Normal (20)",
+  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Normal (20).png",
+  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Normal (20).tex",
+  "extracted_graph": {
+    "diagram_id": "Normal (20)",
+    "nodes": [
+      {
+        "node_id": "n1",
+        "label_text": "End",
+        "shape_type": "rectangle",
+        "semantic_role": "Terminator"
+      },
+      {
+        "node_id": "n2",
+        "label_text": "Analogical Inference",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "n3",
+        "label_text": "Sampling",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "n4",
+        "label_text": "Analog Retrieval",
+        "shape_type": "rectangle",
+        "semantic_role": "Process"
+      }
+    ],
+    "edges": [
+      {
+        "edge_id": "e1",
+        "source_node_id": "n4",
+        "target_node_id": "n3",
+        "condition_label": "learning"
+      },
+      {
+        "edge_id": "e2",
+        "source_node_id": "n3",
+        "target_node_id": "n2",
+        "condition_label": "Self-supervised learning"
+      },
+      {
+        "edge_id": "e3",
+        "source_node_id": "n2",
+        "target_node_id": "n1",
+        "condition_label": "Intersection"
+      }
+    ]
+  },
+  "raw_output": "{\n  \"diagram_id\": \"Normal (20)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"n1\",\n      \"label_text\": \"End\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"n2\",\n      \"label_text\": \"Analogical Inference\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"n3\",\n      \"label_text\": \"Sampling\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"n4\",\n      \"label_text\": \"Analog Retrieval\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"e1\",\n      \"source_node_id\": \"n4\",\n      \"target_node_id\": \"n3\",\n      \"condition_label\": \"learning\"\n    },\n    {\n      \"edge_id\": \"e2\",\n      \"source_node_id\": \"n3\",\n      \"target_node_id\": \"n2\",\n      \"condition_label\": \"Self-supervised learning\"\n    },\n    {\n      \"edge_id\": \"e3\",\n      \"source_node_id\": \"n2\",\n      \"target_node_id\": \"n1\",\n      \"condition_label\": \"Intersection\"\n    }\n  ]\n}"
+}

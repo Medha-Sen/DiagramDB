@@ -1,0 +1,133 @@
+{
+  "image_id": "Connect (96)",
+  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Connect (96).png",
+  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Connect (96).tex",
+  "extracted_graph": {
+    "diagram_id": "Connect (96)",
+    "nodes": [
+      {
+        "node_id": "start",
+        "label_text": "START",
+        "shape_type": "ellipse",
+        "semantic_role": "Terminator"
+      },
+      {
+        "node_id": "input",
+        "label_text": "Input A,B,C",
+        "shape_type": "trapezium",
+        "semantic_role": "Data"
+      },
+      {
+        "node_id": "isAgtB",
+        "label_text": "IS A>B?",
+        "shape_type": "diamond",
+        "semantic_role": "Decision"
+      },
+      {
+        "node_id": "isBgtC",
+        "label_text": "IS B>C?",
+        "shape_type": "diamond",
+        "semantic_role": "Decision"
+      },
+      {
+        "node_id": "isAgtC",
+        "label_text": "IS A>C?",
+        "shape_type": "diamond",
+        "semantic_role": "Decision"
+      },
+      {
+        "node_id": "printB",
+        "label_text": "PRINT B",
+        "shape_type": "trapezium",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "printC",
+        "label_text": "PRINT C",
+        "shape_type": "trapezium",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "printA",
+        "label_text": "PRINT A",
+        "shape_type": "trapezium",
+        "semantic_role": "Process"
+      },
+      {
+        "node_id": "stop",
+        "label_text": "Stop",
+        "shape_type": "ellipse",
+        "semantic_role": "Terminator"
+      }
+    ],
+    "edges": [
+      {
+        "edge_id": "edge_1",
+        "source_node_id": "start",
+        "target_node_id": "input",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_2",
+        "source_node_id": "input",
+        "target_node_id": "isAgtB",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_3",
+        "source_node_id": "isAgtB",
+        "target_node_id": "isBgtC",
+        "condition_label": "NO"
+      },
+      {
+        "edge_id": "edge_4",
+        "source_node_id": "isAgtB",
+        "target_node_id": "isAgtC",
+        "condition_label": "YES"
+      },
+      {
+        "edge_id": "edge_5",
+        "source_node_id": "isBgtC",
+        "target_node_id": "printB",
+        "condition_label": "YES"
+      },
+      {
+        "edge_id": "edge_6",
+        "source_node_id": "isBgtC",
+        "target_node_id": "printB",
+        "condition_label": "NO"
+      },
+      {
+        "edge_id": "edge_7",
+        "source_node_id": "isAgtC",
+        "target_node_id": "printC",
+        "condition_label": "NO"
+      },
+      {
+        "edge_id": "edge_8",
+        "source_node_id": "isAgtC",
+        "target_node_id": "printA",
+        "condition_label": "YES"
+      },
+      {
+        "edge_id": "edge_9",
+        "source_node_id": "printB",
+        "target_node_id": "stop",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_10",
+        "source_node_id": "printC",
+        "target_node_id": "stop",
+        "condition_label": null
+      },
+      {
+        "edge_id": "edge_11",
+        "source_node_id": "printA",
+        "target_node_id": "stop",
+        "condition_label": null
+      }
+    ]
+  },
+  "raw_output": "{\n  \"diagram_id\": \"Connect (96)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"start\",\n      \"label_text\": \"START\",\n      \"shape_type\": \"ellipse\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"input\",\n      \"label_text\": \"Input A,B,C\",\n      \"shape_type\": \"trapezium\",\n      \"semantic_role\": \"Data\"\n    },\n    {\n      \"node_id\": \"isAgtB\",\n      \"label_text\": \"IS A>B?\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"isBgtC\",\n      \"label_text\": \"IS B>C?\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"isAgtC\",\n      \"label_text\": \"IS A>C?\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"printB\",\n      \"label_text\": \"PRINT B\",\n      \"shape_type\": \"trapezium\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"printC\",\n      \"label_text\": \"PRINT C\",\n      \"shape_type\": \"trapezium\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"printA\",\n      \"label_text\": \"PRINT A\",\n      \"shape_type\": \"trapezium\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"stop\",\n      \"label_text\": \"Stop\",\n      \"shape_type\": \"ellipse\",\n      \"semantic_role\": \"Terminator\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"edge_1\",\n      \"source_node_id\": \"start\",\n      \"target_node_id\": \"input\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_2\",\n      \"source_node_id\": \"input\",\n      \"target_node_id\": \"isAgtB\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_3\",\n      \"source_node_id\": \"isAgtB\",\n      \"target_node_id\": \"isBgtC\",\n      \"condition_label\": \"NO\"\n    },\n    {\n      \"edge_id\": \"edge_4\",\n      \"source_node_id\": \"isAgtB\",\n      \"target_node_id\": \"isAgtC\",\n      \"condition_label\": \"YES\"\n    },\n    {\n      \"edge_id\": \"edge_5\",\n      \"source_node_id\": \"isBgtC\",\n      \"target_node_id\": \"printB\",\n      \"condition_label\": \"YES\"\n    },\n    {\n      \"edge_id\": \"edge_6\",\n      \"source_node_id\": \"isBgtC\",\n      \"target_node_id\": \"printB\",\n      \"condition_label\": \"NO\"\n    },\n    {\n      \"edge_id\": \"edge_7\",\n      \"source_node_id\": \"isAgtC\",\n      \"target_node_id\": \"printC\",\n      \"condition_label\": \"NO\"\n    },\n    {\n      \"edge_id\": \"edge_8\",\n      \"source_node_id\": \"isAgtC\",\n      \"target_node_id\": \"printA\",\n      \"condition_label\": \"YES\"\n    },\n    {\n      \"edge_id\": \"edge_9\",\n      \"source_node_id\": \"printB\",\n      \"target_node_id\": \"stop\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_10\",\n      \"source_node_id\": \"printC\",\n      \"target_node_id\": \"stop\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_11\",\n      \"source_node_id\": \"printA\",\n      \"target_node_id\": \"stop\",\n      \"condition_label\": null\n    }\n  ]\n}"
+}
