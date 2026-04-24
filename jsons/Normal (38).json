@@ -1,7 +1,5 @@
 {
   "image_id": "Normal (38)",
-  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Normal (38).png",
-  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Normal (38).tex",
   "extracted_graph": {
     "diagram_id": "Normal (38)",
     "nodes": [
@@ -86,6 +84,5 @@
         "condition_label": "CONDITION is FALSE"
       }
     ]
-  },
-  "raw_output": "{\n  \"diagram_id\": \"Normal (38)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"start\",\n      \"label_text\": \"START\",\n      \"shape_type\": \"ellipse\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"input\",\n      \"label_text\": \"ACCEPT INPUT FROM USER\",\n      \"shape_type\": \"trapezium\",\n      \"semantic_role\": \"Data\"\n    },\n    {\n      \"node_id\": \"condition\",\n      \"label_text\": \"CONDITION\\n{\\nfor (i = 1; i <= a; i++)\\n}\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"process\",\n      \"label_text\": \"Process\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"print\",\n      \"label_text\": \"PRINT VALUE OF FACTORIAL\",\n      \"shape_type\": \"trapezium\",\n      \"semantic_role\": \"Data\"\n    },\n    {\n      \"node_id\": \"stop\",\n      \"label_text\": \"STOP\",\n      \"shape_type\": \"ellipse\",\n      \"semantic_role\": \"Terminator\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"edge_1\",\n      \"source_node_id\": \"start\",\n      \"target_node_id\": \"input\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_2\",\n      \"source_node_id\": \"input\",\n      \"target_node_id\": \"condition\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_3\",\n      \"source_node_id\": \"condition\",\n      \"target_node_id\": \"process\",\n      \"condition_label\": \"CONDITION is TRUE\"\n    },\n    {\n      \"edge_id\": \"edge_4\",\n      \"source_node_id\": \"process\",\n      \"target_node_id\": \"print\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_5\",\n      \"source_node_id\": \"print\",\n      \"target_node_id\": \"stop\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_6\",\n      \"source_node_id\": \"process\",\n      \"target_node_id\": \"condition\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_7\",\n      \"source_node_id\": \"condition\",\n      \"target_node_id\": \"print\",\n      \"condition_label\": \"CONDITION is FALSE\"\n    }\n  ]\n}"
+  }
 }

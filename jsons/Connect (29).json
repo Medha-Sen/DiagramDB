@@ -1,7 +1,5 @@
 {
   "image_id": "Connect (29)",
-  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Connect (29).png",
-  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Connect (29).tex",
   "extracted_graph": {
     "diagram_id": "Connect (29)",
     "nodes": [
@@ -92,6 +90,5 @@
         "condition_label": null
       }
     ]
-  },
-  "raw_output": "{\n  \"diagram_id\": \"Connect (29)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"start\",\n      \"label_text\": \"start\",\n      \"shape_type\": \"rounded_rectangle\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"auth\",\n      \"label_text\": \"identity authentication\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"verif\",\n      \"label_text\": \"identity verification\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"tryagain\",\n      \"label_text\": \"Try Again\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"profile\",\n      \"label_text\": \"Profile\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"user\",\n      \"label_text\": \"User\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"mgmt\",\n      \"label_text\": \"identity management\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"edge_1\",\n      \"source_node_id\": \"start\",\n      \"target_node_id\": \"auth\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_2\",\n      \"source_node_id\": \"auth\",\n      \"target_node_id\": \"verif\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_3\",\n      \"source_node_id\": \"verif\",\n      \"target_node_id\": \"tryagain\",\n      \"condition_label\": \"N\"\n    },\n    {\n      \"edge_id\": \"edge_4\",\n      \"source_node_id\": \"verif\",\n      \"target_node_id\": \"profile\",\n      \"condition_label\": \"Y\"\n    },\n    {\n      \"edge_id\": \"edge_5\",\n      \"source_node_id\": \"profile\",\n      \"target_node_id\": \"user\",\n      \"condition_label\": \"N\"\n    },\n    {\n      \"edge_id\": \"edge_6\",\n      \"source_node_id\": \"profile\",\n      \"target_node_id\": \"mgmt\",\n      \"condition_label\": \"Y\"\n    },\n    {\n      \"edge_id\": \"edge_7\",\n      \"source_node_id\": \"tryagain\",\n      \"target_node_id\": \"verif\",\n      \"condition_label\": null\n    }\n  ]\n}"
+  }
 }

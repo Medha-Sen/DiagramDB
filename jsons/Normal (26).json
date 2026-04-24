@@ -1,7 +1,5 @@
 {
   "image_id": "Normal (26)",
-  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Normal (26).png",
-  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Normal (26).tex",
   "extracted_graph": {
     "diagram_id": "Normal (26)",
     "nodes": [
@@ -86,6 +84,5 @@
         "condition_label": null
       }
     ]
-  },
-  "raw_output": "{\n  \"diagram_id\": \"Normal (26)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"board\",\n      \"label_text\": \"board\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"lighting\",\n      \"label_text\": \"Lighting\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"power\",\n      \"label_text\": \"Power\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"generalpower\",\n      \"label_text\": \"General power\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"conveyer1\",\n      \"label_text\": \"Conveyer 1\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"processing\",\n      \"label_text\": \"Processing\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"conveyer\",\n      \"label_text\": \"Conveyer\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"edge_1\",\n      \"source_node_id\": \"board\",\n      \"target_node_id\": \"lighting\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_2\",\n      \"source_node_id\": \"board\",\n      \"target_node_id\": \"power\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_3\",\n      \"source_node_id\": \"board\",\n      \"target_node_id\": \"generalpower\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_4\",\n      \"source_node_id\": \"power\",\n      \"target_node_id\": \"conveyer1\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_5\",\n      \"source_node_id\": \"conveyer1\",\n      \"target_node_id\": \"processing\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_6\",\n      \"source_node_id\": \"processing\",\n      \"target_node_id\": \"conveyer\",\n      \"condition_label\": null\n    }\n  ]\n}"
+  }
 }

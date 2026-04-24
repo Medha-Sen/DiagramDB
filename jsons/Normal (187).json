@@ -1,7 +1,5 @@
 {
   "image_id": "Normal (187)",
-  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Normal (187).png",
-  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Normal (187).tex",
   "extracted_graph": {
     "diagram_id": "Normal (187)",
     "nodes": [
@@ -74,6 +72,5 @@
         "condition_label": "Obj classification"
       }
     ]
-  },
-  "raw_output": "{\n  \"diagram_id\": \"Normal (187)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"camera\",\n      \"label_text\": \"Camera\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Data\"\n    },\n    {\n      \"node_id\": \"cache\",\n      \"label_text\": \"Cache\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"objdet\",\n      \"label_text\": \"Object\\\\Detection\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"tracking\",\n      \"label_text\": \"Tracking\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"vehicleid\",\n      \"label_text\": \"Vehicle\\\\Identify\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"result\",\n      \"label_text\": \"Result\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Terminator\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"edge_camera_to_cache\",\n      \"source_node_id\": \"camera\",\n      \"target_node_id\": \"cache\",\n      \"condition_label\": \"Video\"\n    },\n    {\n      \"edge_id\": \"edge_cache_to_objdet\",\n      \"source_node_id\": \"cache\",\n      \"target_node_id\": \"objdet\",\n      \"condition_label\": \"Image\\\\Sequence\"\n    },\n    {\n      \"edge_id\": \"edge_objdet_to_tracking\",\n      \"source_node_id\": \"objdet\",\n      \"target_node_id\": \"tracking\",\n      \"condition_label\": \"Info of\\\\Moving\\\\Obj\"\n    },\n    {\n      \"edge_id\": \"edge_tracking_to_vehicleid\",\n      \"source_node_id\": \"tracking\",\n      \"target_node_id\": \"vehicleid\",\n      \"condition_label\": \"Obj Characteristic\"\n    },\n    {\n      \"edge_id\": \"edge_vehicleid_to_result\",\n      \"source_node_id\": \"vehicleid\",\n      \"target_node_id\": \"result\",\n      \"condition_label\": \"Obj classification\"\n    }\n  ]\n}"
+  }
 }

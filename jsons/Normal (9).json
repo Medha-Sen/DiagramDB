@@ -1,7 +1,5 @@
 {
   "image_id": "Normal (9)",
-  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Normal (9).png",
-  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Normal (9).tex",
   "extracted_graph": {
     "diagram_id": "Normal (9)",
     "nodes": [
@@ -74,6 +72,5 @@
         "condition_label": null
       }
     ]
-  },
-  "raw_output": "{\n  \"diagram_id\": \"Normal (9)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"start\",\n      \"label_text\": \"Start\",\n      \"shape_type\": \"ellipse\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"in1\",\n      \"label_text\": \"Read A\",\n      \"shape_type\": \"trapezium\",\n      \"semantic_role\": \"Data\"\n    },\n    {\n      \"node_id\": \"pro1\",\n      \"label_text\": \"Read B\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"pro2\",\n      \"label_text\": \"Calculate sum as A+B\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"pro3\",\n      \"label_text\": \"Print Sum\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"end\",\n      \"label_text\": \"End\",\n      \"shape_type\": \"ellipse\",\n      \"semantic_role\": \"Terminator\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"edge_1\",\n      \"source_node_id\": \"start\",\n      \"target_node_id\": \"in1\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_2\",\n      \"source_node_id\": \"in1\",\n      \"target_node_id\": \"pro1\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_3\",\n      \"source_node_id\": \"pro1\",\n      \"target_node_id\": \"pro2\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_4\",\n      \"source_node_id\": \"pro2\",\n      \"target_node_id\": \"pro3\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_5\",\n      \"source_node_id\": \"pro3\",\n      \"target_node_id\": \"end\",\n      \"condition_label\": null\n    }\n  ]\n}"
+  }
 }

@@ -1,7 +1,5 @@
 {
   "image_id": "Connect (85)",
-  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Connect (85).png",
-  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Connect (85).tex",
   "extracted_graph": {
     "diagram_id": "Connect (85)",
     "nodes": [
@@ -80,6 +78,5 @@
         "condition_label": null
       }
     ]
-  },
-  "raw_output": "{\n  \"diagram_id\": \"Connect (85)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"start\",\n      \"label_text\": \"Start\",\n      \"shape_type\": \"circle\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"pro1\",\n      \"label_text\": \"My Operation\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"dec1\",\n      \"label_text\": \"Yes or No?\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"pro2a\",\n      \"label_text\": \"Therapy\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"pro2b\",\n      \"label_text\": \"caten something\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"end\",\n      \"label_text\": \"End\",\n      \"shape_type\": \"circle\",\n      \"semantic_role\": \"Terminator\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"edge_1\",\n      \"source_node_id\": \"start\",\n      \"target_node_id\": \"pro1\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_2\",\n      \"source_node_id\": \"pro1\",\n      \"target_node_id\": \"dec1\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_3\",\n      \"source_node_id\": \"dec1\",\n      \"target_node_id\": \"pro2b\",\n      \"condition_label\": \"yes\"\n    },\n    {\n      \"edge_id\": \"edge_4\",\n      \"source_node_id\": \"dec1\",\n      \"target_node_id\": \"pro2a\",\n      \"condition_label\": \"no\"\n    },\n    {\n      \"edge_id\": \"edge_5\",\n      \"source_node_id\": \"pro2a\",\n      \"target_node_id\": \"pro1\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_6\",\n      \"source_node_id\": \"pro2b\",\n      \"target_node_id\": \"end\",\n      \"condition_label\": null\n    }\n  ]\n}"
+  }
 }

@@ -1,7 +1,5 @@
 {
   "image_id": "Break (23)",
-  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Break (23).png",
-  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Break (23).tex",
   "extracted_graph": {
     "diagram_id": "Break (23)",
     "nodes": [
@@ -50,6 +48,5 @@
         "condition_label": "No"
       }
     ]
-  },
-  "raw_output": "{\n  \"diagram_id\": \"Break (23)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"start\",\n      \"label_text\": \"Start\",\n      \"shape_type\": \"ellipse\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"approval\",\n      \"label_text\": \"Approval\\\\Needed?\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"manager\",\n      \"label_text\": \"Go to\\\\manager\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"finished\",\n      \"label_text\": \"Finished\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Terminator\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"edge_start_to_approval\",\n      \"source_node_id\": \"start\",\n      \"target_node_id\": \"approval\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_approval_to_manager\",\n      \"source_node_id\": \"approval\",\n      \"target_node_id\": \"manager\",\n      \"condition_label\": \"Yes\"\n    },\n    {\n      \"edge_id\": \"edge_approval_to_finished\",\n      \"source_node_id\": \"approval\",\n      \"target_node_id\": \"finished\",\n      \"condition_label\": \"No\"\n    }\n  ]\n}"
+  }
 }

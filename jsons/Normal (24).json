@@ -1,7 +1,5 @@
 {
   "image_id": "Normal (24)",
-  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Normal (24).png",
-  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Normal (24).tex",
   "extracted_graph": {
     "diagram_id": "Normal (24)",
     "nodes": [
@@ -92,6 +90,5 @@
         "condition_label": null
       }
     ]
-  },
-  "raw_output": "{\n  \"diagram_id\": \"Normal (24)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"app\",\n      \"label_text\": \"Application\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"plan\",\n      \"label_text\": \"Plan & design worload & jobs\\\\to be executed\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"prep\",\n      \"label_text\": \"Prepare Custom\\\\Script/Clients\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"run\",\n      \"label_text\": \"Run Tests and\\\\analyze\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"error\",\n      \"label_text\": \"Error\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"final\",\n      \"label_text\": \"Finalize Configuration\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"rev\",\n      \"label_text\": \"Revising\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"edge_1\",\n      \"source_node_id\": \"app\",\n      \"target_node_id\": \"plan\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_2\",\n      \"source_node_id\": \"plan\",\n      \"target_node_id\": \"prep\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_3\",\n      \"source_node_id\": \"prep\",\n      \"target_node_id\": \"run\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_4\",\n      \"source_node_id\": \"run\",\n      \"target_node_id\": \"error\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_5\",\n      \"source_node_id\": \"error\",\n      \"target_node_id\": \"final\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_6\",\n      \"source_node_id\": \"error\",\n      \"target_node_id\": \"rev\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_7\",\n      \"source_node_id\": \"rev\",\n      \"target_node_id\": \"run\",\n      \"condition_label\": null\n    }\n  ]\n}"
+  }
 }

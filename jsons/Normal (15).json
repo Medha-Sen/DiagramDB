@@ -1,7 +1,5 @@
 {
   "image_id": "Normal (15)",
-  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Normal (15).png",
-  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Normal (15).tex",
   "extracted_graph": {
     "diagram_id": "Normal (15)",
     "nodes": [
@@ -80,6 +78,5 @@
         "condition_label": null
       }
     ]
-  },
-  "raw_output": "{\n  \"diagram_id\": \"Normal (15)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"start\",\n      \"label_text\": \"Start\",\n      \"shape_type\": \"rounded_rectangle\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"input\",\n      \"label_text\": \"Input\",\n      \"shape_type\": \"trapezium\",\n      \"semantic_role\": \"Data\"\n    },\n    {\n      \"node_id\": \"dec\",\n      \"label_text\": \"If (angka % 2 == 1)\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"prime\",\n      \"label_text\": \"Prime Number\",\n      \"shape_type\": \"trapezium\",\n      \"semantic_role\": \"Data\"\n    },\n    {\n      \"node_id\": \"nonprime\",\n      \"label_text\": \"Non prime\",\n      \"shape_type\": \"trapezium\",\n      \"semantic_role\": \"Data\"\n    },\n    {\n      \"node_id\": \"finish\",\n      \"label_text\": \"Finish\",\n      \"shape_type\": \"rounded_rectangle\",\n      \"semantic_role\": \"Terminator\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"edge_1\",\n      \"source_node_id\": \"start\",\n      \"target_node_id\": \"input\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_2\",\n      \"source_node_id\": \"input\",\n      \"target_node_id\": \"dec\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_3\",\n      \"source_node_id\": \"dec\",\n      \"target_node_id\": \"prime\",\n      \"condition_label\": \"True\"\n    },\n    {\n      \"edge_id\": \"edge_4\",\n      \"source_node_id\": \"dec\",\n      \"target_node_id\": \"nonprime\",\n      \"condition_label\": \"False\"\n    },\n    {\n      \"edge_id\": \"edge_5\",\n      \"source_node_id\": \"prime\",\n      \"target_node_id\": \"finish\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_6\",\n      \"source_node_id\": \"nonprime\",\n      \"target_node_id\": \"finish\",\n      \"condition_label\": null\n    }\n  ]\n}"
+  }
 }

@@ -1,7 +1,5 @@
 {
   "image_id": "Normal (11)",
-  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Normal (11).png",
-  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Normal (11).tex",
   "extracted_graph": {
     "diagram_id": "Normal (11)",
     "nodes": [
@@ -74,6 +72,5 @@
         "condition_label": "False"
       }
     ]
-  },
-  "raw_output": "{\n  \"diagram_id\": \"Normal (11)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"start\",\n      \"label_text\": \"START\",\n      \"shape_type\": \"ellipse\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"input\",\n      \"label_text\": \"Input Variable: K\",\n      \"shape_type\": \"trapezium\",\n      \"semantic_role\": \"Data\"\n    },\n    {\n      \"node_id\": \"dec\",\n      \"label_text\": \"If K%2==0\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"even\",\n      \"label_text\": \"Print: K is Even\",\n      \"shape_type\": \"trapezium\",\n      \"semantic_role\": \"Data\"\n    },\n    {\n      \"node_id\": \"stop\",\n      \"label_text\": \"STOP\",\n      \"shape_type\": \"ellipse\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"odd\",\n      \"label_text\": \"Print: K is odd\",\n      \"shape_type\": \"trapezium\",\n      \"semantic_role\": \"Data\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"edge_1\",\n      \"source_node_id\": \"start\",\n      \"target_node_id\": \"input\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_2\",\n      \"source_node_id\": \"input\",\n      \"target_node_id\": \"dec\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_3\",\n      \"source_node_id\": \"dec\",\n      \"target_node_id\": \"even\",\n      \"condition_label\": \"True\"\n    },\n    {\n      \"edge_id\": \"edge_4\",\n      \"source_node_id\": \"even\",\n      \"target_node_id\": \"stop\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_5\",\n      \"source_node_id\": \"dec\",\n      \"target_node_id\": \"odd\",\n      \"condition_label\": \"False\"\n    }\n  ]\n}"
+  }
 }

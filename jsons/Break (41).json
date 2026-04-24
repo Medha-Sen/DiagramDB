@@ -1,7 +1,5 @@
 {
   "image_id": "Break (41)",
-  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Break (41).png",
-  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Break (41).tex",
   "extracted_graph": {
     "diagram_id": "Break (41)",
     "nodes": [
@@ -74,6 +72,5 @@
         "condition_label": "False"
       }
     ]
-  },
-  "raw_output": "{\n  \"diagram_id\": \"Break (41)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"start\",\n      \"label_text\": \"Start\",\n      \"shape_type\": \"rounded_rectangle\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"input\",\n      \"label_text\": \"Take Input\",\n      \"shape_type\": \"trapezium\",\n      \"semantic_role\": \"Data\"\n    },\n    {\n      \"node_id\": \"dec\",\n      \"label_text\": \"If\\\\Number%2==0\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"printres\",\n      \"label_text\": \"Print result\",\n      \"shape_type\": \"trapezium\",\n      \"semantic_role\": \"Data\"\n    },\n    {\n      \"node_id\": \"end\",\n      \"label_text\": \"End\",\n      \"shape_type\": \"rounded_rectangle\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"printodd\",\n      \"label_text\": \"Print: \\\"Number\\\\is odd\\\"\",\n      \"shape_type\": \"trapezium\",\n      \"semantic_role\": \"Data\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"edge_1\",\n      \"source_node_id\": \"start\",\n      \"target_node_id\": \"input\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_2\",\n      \"source_node_id\": \"input\",\n      \"target_node_id\": \"dec\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_3\",\n      \"source_node_id\": \"dec\",\n      \"target_node_id\": \"printres\",\n      \"condition_label\": \"True\"\n    },\n    {\n      \"edge_id\": \"edge_4\",\n      \"source_node_id\": \"printres\",\n      \"target_node_id\": \"end\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_5\",\n      \"source_node_id\": \"dec\",\n      \"target_node_id\": \"printodd\",\n      \"condition_label\": \"False\"\n    }\n  ]\n}"
+  }
 }

@@ -1,7 +1,5 @@
 {
   "image_id": "Break (40)",
-  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Break (40).png",
-  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Break (40).tex",
   "extracted_graph": {
     "diagram_id": "Break (40)",
     "nodes": [
@@ -62,6 +60,5 @@
         "condition_label": null
       }
     ]
-  },
-  "raw_output": "{\n  \"diagram_id\": \"Break (40)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"prog\",\n      \"label_text\": \"Program\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"input\",\n      \"label_text\": \"Input image\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Data\"\n    },\n    {\n      \"node_id\": \"desc\",\n      \"label_text\": \"Description\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"seg\",\n      \"label_text\": \"Segmentation\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"dec\",\n      \"label_text\": \"Obstacle/Non-obstacle decision\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Decision\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"edge_prog_input\",\n      \"source_node_id\": \"prog\",\n      \"target_node_id\": \"input\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_input_desc\",\n      \"source_node_id\": \"input\",\n      \"target_node_id\": \"desc\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_desc_seg\",\n      \"source_node_id\": \"desc\",\n      \"target_node_id\": \"seg\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_seg_dec\",\n      \"source_node_id\": \"seg\",\n      \"target_node_id\": \"dec\",\n      \"condition_label\": null\n    }\n  ]\n}"
+  }
 }

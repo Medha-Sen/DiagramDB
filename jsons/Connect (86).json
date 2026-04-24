@@ -1,7 +1,5 @@
 {
   "image_id": "Connect (86)",
-  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Connect (86).png",
-  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Connect (86).tex",
   "extracted_graph": {
     "diagram_id": "Connect (86)",
     "nodes": [
@@ -31,7 +29,7 @@
       },
       {
         "node_id": "continue",
-        "label_text": "Take g\u00f3vany",
+        "label_text": "Take góvany",
         "shape_type": "rectangle",
         "semantic_role": "Process"
       },
@@ -80,6 +78,5 @@
         "condition_label": null
       }
     ]
-  },
-  "raw_output": "{\n  \"diagram_id\": \"Connect (86)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"home\",\n      \"label_text\": \"Home\",\n      \"shape_type\": \"rectangle with rounded corners\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"check\",\n      \"label_text\": \"Checktime\",\n      \"shape_type\": \"trapezium\",\n      \"semantic_role\": \"Data\"\n    },\n    {\n      \"node_id\": \"leave\",\n      \"label_text\": \"Late?\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"take\",\n      \"label_text\": \"Take bus\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"continue\",\n      \"label_text\": \"Take g\u00f3vany\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"recover\",\n      \"label_text\": \"Reach school\",\n      \"shape_type\": \"rectangle with rounded corners\",\n      \"semantic_role\": \"Terminator\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"edge_1\",\n      \"source_node_id\": \"home\",\n      \"target_node_id\": \"check\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_2\",\n      \"source_node_id\": \"check\",\n      \"target_node_id\": \"leave\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_3\",\n      \"source_node_id\": \"leave\",\n      \"target_node_id\": \"take\",\n      \"condition_label\": \"Yes\"\n    },\n    {\n      \"edge_id\": \"edge_4\",\n      \"source_node_id\": \"leave\",\n      \"target_node_id\": \"continue\",\n      \"condition_label\": \"No\"\n    },\n    {\n      \"edge_id\": \"edge_5\",\n      \"source_node_id\": \"take\",\n      \"target_node_id\": \"recover\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_6\",\n      \"source_node_id\": \"continue\",\n      \"target_node_id\": \"recover\",\n      \"condition_label\": null\n    }\n  ]\n}"
+  }
 }

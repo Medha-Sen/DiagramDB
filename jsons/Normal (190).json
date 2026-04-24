@@ -1,7 +1,5 @@
 {
   "image_id": "Normal (190)",
-  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Normal (190).png",
-  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Normal (190).tex",
   "extracted_graph": {
     "diagram_id": "Normal (190)",
     "nodes": [
@@ -68,6 +66,5 @@
         "condition_label": null
       }
     ]
-  },
-  "raw_output": "{\n  \"diagram_id\": \"Normal (190)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"custdoc\",\n      \"label_text\": \"Customer Documents\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Data\"\n    },\n    {\n      \"node_id\": \"dec\",\n      \"label_text\": \"Review documents?\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"forward\",\n      \"label_text\": \"Forward to Bank Manager\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"profile\",\n      \"label_text\": \"Profile Done\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"process\",\n      \"label_text\": \"Process Terminates\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Terminator\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"edge_1\",\n      \"source_node_id\": \"custdoc\",\n      \"target_node_id\": \"dec\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_2\",\n      \"source_node_id\": \"dec\",\n      \"target_node_id\": \"forward\",\n      \"condition_label\": \"Documents are complete\"\n    },\n    {\n      \"edge_id\": \"edge_3\",\n      \"source_node_id\": \"forward\",\n      \"target_node_id\": \"profile\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_4\",\n      \"source_node_id\": \"dec\",\n      \"target_node_id\": \"process\",\n      \"condition_label\": \"Rejected because of missing documents\"\n    },\n    {\n      \"edge_id\": \"edge_5\",\n      \"source_node_id\": \"profile\",\n      \"target_node_id\": \"process\",\n      \"condition_label\": null\n    }\n  ]\n}"
+  }
 }

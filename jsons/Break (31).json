@@ -1,7 +1,5 @@
 {
   "image_id": "Break (31)",
-  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Break (31).png",
-  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Break (31).tex",
   "extracted_graph": {
     "diagram_id": "Break (31)",
     "nodes": [
@@ -92,6 +90,5 @@
         "condition_label": null
       }
     ]
-  },
-  "raw_output": "{\n  \"diagram_id\": \"Break (31)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"start\",\n      \"label_text\": \"Start\",\n      \"shape_type\": \"rounded_rectangle\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"init\",\n      \"label_text\": \"Initialize\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"decision\",\n      \"label_text\": \"Decision\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"print\",\n      \"label_text\": \"Print result\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"end\",\n      \"label_text\": \"End\",\n      \"shape_type\": \"rounded_rectangle\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"processnode\",\n      \"label_text\": \"Process\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"delay\",\n      \"label_text\": \"Delay\",\n      \"shape_type\": \"D_shape\",\n      \"semantic_role\": \"Data\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"edge_1\",\n      \"source_node_id\": \"start\",\n      \"target_node_id\": \"init\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_2\",\n      \"source_node_id\": \"init\",\n      \"target_node_id\": \"decision\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_3\",\n      \"source_node_id\": \"decision\",\n      \"target_node_id\": \"print\",\n      \"condition_label\": \"Yes\"\n    },\n    {\n      \"edge_id\": \"edge_4\",\n      \"source_node_id\": \"print\",\n      \"target_node_id\": \"end\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_5\",\n      \"source_node_id\": \"decision\",\n      \"target_node_id\": \"processnode\",\n      \"condition_label\": \"No\"\n    },\n    {\n      \"edge_id\": \"edge_6\",\n      \"source_node_id\": \"processnode\",\n      \"target_node_id\": \"delay\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_7\",\n      \"source_node_id\": \"delay\",\n      \"target_node_id\": \"init\",\n      \"condition_label\": null\n    }\n  ]\n}"
+  }
 }

@@ -1,7 +1,5 @@
 {
   "image_id": "Normal (41)",
-  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Normal (41).png",
-  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Normal (41).tex",
   "extracted_graph": {
     "diagram_id": "Normal (41)",
     "nodes": [
@@ -19,7 +17,7 @@
       },
       {
         "node_id": "dec",
-        "label_text": "A\u226410?",
+        "label_text": "A≤10?",
         "shape_type": "diamond",
         "semantic_role": "Decision"
       },
@@ -86,6 +84,5 @@
         "condition_label": null
       }
     ]
-  },
-  "raw_output": "{\n  \"diagram_id\": \"Normal (41)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"start\",\n      \"label_text\": \"Start\",\n      \"shape_type\": \"ellipse\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"init\",\n      \"label_text\": \"A = 1\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"dec\",\n      \"label_text\": \"A\u226410?\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"print\",\n      \"label_text\": \"Print A\",\n      \"shape_type\": \"trapezium\",\n      \"semantic_role\": \"Data\"\n    },\n    {\n      \"node_id\": \"inc\",\n      \"label_text\": \"A = A + 1\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"end\",\n      \"label_text\": \"End\",\n      \"shape_type\": \"ellipse\",\n      \"semantic_role\": \"Terminator\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"edge_1\",\n      \"source_node_id\": \"start\",\n      \"target_node_id\": \"init\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_2\",\n      \"source_node_id\": \"init\",\n      \"target_node_id\": \"dec\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_3\",\n      \"source_node_id\": \"dec\",\n      \"target_node_id\": \"print\",\n      \"condition_label\": \"T\"\n    },\n    {\n      \"edge_id\": \"edge_4\",\n      \"source_node_id\": \"print\",\n      \"target_node_id\": \"inc\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_5\",\n      \"source_node_id\": \"inc\",\n      \"target_node_id\": \"end\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_6\",\n      \"source_node_id\": \"dec\",\n      \"target_node_id\": \"end\",\n      \"condition_label\": \"F\"\n    },\n    {\n      \"edge_id\": \"edge_7\",\n      \"source_node_id\": \"inc\",\n      \"target_node_id\": \"dec\",\n      \"condition_label\": null\n    }\n  ]\n}"
+  }
 }

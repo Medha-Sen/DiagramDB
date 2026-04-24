@@ -1,7 +1,5 @@
 {
   "image_id": "Normal (22)",
-  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Normal (22).png",
-  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Normal (22).tex",
   "extracted_graph": {
     "diagram_id": "Normal (22)",
     "nodes": [
@@ -62,6 +60,5 @@
         "condition_label": "No/\\Don't know"
       }
     ]
-  },
-  "raw_output": "{\n  \"diagram_id\": \"Normal (22)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"a\",\n      \"label_text\": \"Go the first\\\\dose?\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"b\",\n      \"label_text\": \"1 dose\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"c\",\n      \"label_text\": \"Go second\\\\dose?\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"d\",\n      \"label_text\": \"1 dose\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"e\",\n      \"label_text\": \"2 doses\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Terminator\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"e1\",\n      \"source_node_id\": \"a\",\n      \"target_node_id\": \"b\",\n      \"condition_label\": \"Yes\"\n    },\n    {\n      \"edge_id\": \"e2\",\n      \"source_node_id\": \"a\",\n      \"target_node_id\": \"c\",\n      \"condition_label\": \"No/\\\\Don't know\"\n    },\n    {\n      \"edge_id\": \"e3\",\n      \"source_node_id\": \"c\",\n      \"target_node_id\": \"d\",\n      \"condition_label\": \"Yes\"\n    },\n    {\n      \"edge_id\": \"e4\",\n      \"source_node_id\": \"c\",\n      \"target_node_id\": \"e\",\n      \"condition_label\": \"No/\\\\Don't know\"\n    }\n  ]\n}"
+  }
 }

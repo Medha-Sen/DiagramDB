@@ -1,7 +1,5 @@
 {
   "image_id": "Connect (11)",
-  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Connect (11).png",
-  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Connect (11).tex",
   "extracted_graph": {
     "diagram_id": "Connect (11)",
     "nodes": [
@@ -98,6 +96,5 @@
         "condition_label": null
       }
     ]
-  },
-  "raw_output": "{\n  \"diagram_id\": \"Connect (11)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"pre\",\n      \"label_text\": \"Pre-processing using\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"feat\",\n      \"label_text\": \"Feature Extraction\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"param\",\n      \"label_text\": \"Parameter\\\\Optimization\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"class\",\n      \"label_text\": \"Classification\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"speech\",\n      \"label_text\": \"Pure speech\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"music\",\n      \"label_text\": \"Music\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"env\",\n      \"label_text\": \"Environmental\\\\sound\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"amp\",\n      \"label_text\": \"Amplifier\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Terminator\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"edge_1\",\n      \"source_node_id\": \"pre\",\n      \"target_node_id\": \"feat\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_2\",\n      \"source_node_id\": \"feat\",\n      \"target_node_id\": \"param\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_3\",\n      \"source_node_id\": \"param\",\n      \"target_node_id\": \"class\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_4\",\n      \"source_node_id\": \"class\",\n      \"target_node_id\": \"speech\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_5\",\n      \"source_node_id\": \"class\",\n      \"target_node_id\": \"music\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_6\",\n      \"source_node_id\": \"class\",\n      \"target_node_id\": \"env\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_7\",\n      \"source_node_id\": \"class\",\n      \"target_node_id\": \"amp\",\n      \"condition_label\": null\n    }\n  ]\n}"
+  }
 }

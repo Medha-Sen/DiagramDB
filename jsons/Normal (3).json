@@ -1,7 +1,5 @@
 {
   "image_id": "Normal (3)",
-  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Normal (3).png",
-  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Normal (3).tex",
   "extracted_graph": {
     "diagram_id": "Normal (3)",
     "nodes": [
@@ -62,6 +60,5 @@
         "condition_label": "born in"
       }
     ]
-  },
-  "raw_output": "{\n  \"diagram_id\": \"Normal (3)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"A\",\n      \"label_text\": \"Mileva Maric\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Data\"\n    },\n    {\n      \"node_id\": \"B\",\n      \"label_text\": \"Albert Einstein\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Data\"\n    },\n    {\n      \"node_id\": \"C\",\n      \"label_text\": \"Harris Albert Einstein\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Data\"\n    },\n    {\n      \"node_id\": \"D\",\n      \"label_text\": \"Hermann Einstein\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Data\"\n    },\n    {\n      \"node_id\": \"E\",\n      \"label_text\": \"German Empire\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Data\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"edge_0\",\n      \"source_node_id\": \"A\",\n      \"target_node_id\": \"B\",\n      \"condition_label\": \"wife of\"\n    },\n    {\n      \"edge_id\": \"edge_1\",\n      \"source_node_id\": \"C\",\n      \"target_node_id\": \"B\",\n      \"condition_label\": \"Son of\"\n    },\n    {\n      \"edge_id\": \"edge_2\",\n      \"source_node_id\": \"B\",\n      \"target_node_id\": \"D\",\n      \"condition_label\": \"Son of\"\n    },\n    {\n      \"edge_id\": \"edge_3\",\n      \"source_node_id\": \"B\",\n      \"target_node_id\": \"E\",\n      \"condition_label\": \"born in\"\n    }\n  ]\n}"
+  }
 }

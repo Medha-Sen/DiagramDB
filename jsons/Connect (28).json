@@ -1,7 +1,5 @@
 {
   "image_id": "Connect (28)",
-  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Connect (28).png",
-  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Connect (28).tex",
   "extracted_graph": {
     "diagram_id": "Connect (28)",
     "nodes": [
@@ -68,6 +66,5 @@
         "condition_label": null
       }
     ]
-  },
-  "raw_output": "{\n  \"diagram_id\": \"Connect (28)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"cand\",\n      \"label_text\": \"Candidate\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"dec\",\n      \"label_text\": \"Are two candidate\\\\left?\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"fin\",\n      \"label_text\": \"Finish\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"elim\",\n      \"label_text\": \"Eliminate last\\\\place candidate\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"rec\",\n      \"label_text\": \"Recount all\\\\ballots\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"edge_1\",\n      \"source_node_id\": \"cand\",\n      \"target_node_id\": \"dec\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_2\",\n      \"source_node_id\": \"dec\",\n      \"target_node_id\": \"fin\",\n      \"condition_label\": \"yes\"\n    },\n    {\n      \"edge_id\": \"edge_3\",\n      \"source_node_id\": \"dec\",\n      \"target_node_id\": \"elim\",\n      \"condition_label\": \"no\"\n    },\n    {\n      \"edge_id\": \"edge_4\",\n      \"source_node_id\": \"elim\",\n      \"target_node_id\": \"rec\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_5\",\n      \"source_node_id\": \"rec\",\n      \"target_node_id\": \"dec\",\n      \"condition_label\": null\n    }\n  ]\n}"
+  }
 }

@@ -1,7 +1,5 @@
 {
   "image_id": "Normal (284)",
-  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Normal (284).png",
-  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Normal (284).tex",
   "extracted_graph": {
     "diagram_id": "Normal (284)",
     "nodes": [
@@ -74,6 +72,5 @@
         "condition_label": "Yes"
       }
     ]
-  },
-  "raw_output": "{\n  \"diagram_id\": \"Normal (284)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"start\",\n      \"label_text\": \"Fan doesn't work\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"dec1\",\n      \"label_text\": \"Fan plugged in?\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"dec2\",\n      \"label_text\": \"Bulb burned out?\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"repair\",\n      \"label_text\": \"Repair Fan\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"plugin\",\n      \"label_text\": \"Plug in Fan\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"replace\",\n      \"label_text\": \"Replace bulb\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"edge_1\",\n      \"source_node_id\": \"start\",\n      \"target_node_id\": \"dec1\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"edge_2\",\n      \"source_node_id\": \"dec1\",\n      \"target_node_id\": \"dec2\",\n      \"condition_label\": \"Yes\"\n    },\n    {\n      \"edge_id\": \"edge_3\",\n      \"source_node_id\": \"dec2\",\n      \"target_node_id\": \"repair\",\n      \"condition_label\": \"No\"\n    },\n    {\n      \"edge_id\": \"edge_4\",\n      \"source_node_id\": \"dec1\",\n      \"target_node_id\": \"plugin\",\n      \"condition_label\": \"No\"\n    },\n    {\n      \"edge_id\": \"edge_5\",\n      \"source_node_id\": \"dec2\",\n      \"target_node_id\": \"replace\",\n      \"condition_label\": \"Yes\"\n    }\n  ]\n}"
+  }
 }

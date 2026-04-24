@@ -1,7 +1,5 @@
 {
   "image_id": "Connect (36)",
-  "image_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex_images/Connect (36).png",
-  "tikz_path": "/archive/medha.sen/V1_Dataset_TikZ/Process diagrams/CBD/tex files/Connect (36).tex",
   "extracted_graph": {
     "diagram_id": "Connect (36)",
     "nodes": [
@@ -80,6 +78,5 @@
         "condition_label": null
       }
     ]
-  },
-  "raw_output": "{\n  \"diagram_id\": \"Connect (36)\",\n  \"nodes\": [\n    {\n      \"node_id\": \"n1\",\n      \"label_text\": \"Randomly generating a group of\\\\parameters of SVM model\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"n2\",\n      \"label_text\": \"Calculate all the values\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"n3\",\n      \"label_text\": \"Finding out the optimal fitness value\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    },\n    {\n      \"node_id\": \"n4\",\n      \"label_text\": \"Are optimazation\\\\criteria met?\",\n      \"shape_type\": \"diamond\",\n      \"semantic_role\": \"Decision\"\n    },\n    {\n      \"node_id\": \"n5\",\n      \"label_text\": \"Finish\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Terminator\"\n    },\n    {\n      \"node_id\": \"n6\",\n      \"label_text\": \"Generating new group by\\\\evolutionary operation\",\n      \"shape_type\": \"rectangle\",\n      \"semantic_role\": \"Process\"\n    }\n  ],\n  \"edges\": [\n    {\n      \"edge_id\": \"e1\",\n      \"source_node_id\": \"n1\",\n      \"target_node_id\": \"n2\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"e2\",\n      \"source_node_id\": \"n2\",\n      \"target_node_id\": \"n3\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"e3\",\n      \"source_node_id\": \"n3\",\n      \"target_node_id\": \"n4\",\n      \"condition_label\": null\n    },\n    {\n      \"edge_id\": \"e4\",\n      \"source_node_id\": \"n4\",\n      \"target_node_id\": \"n5\",\n      \"condition_label\": \"Yes\"\n    },\n    {\n      \"edge_id\": \"e5\",\n      \"source_node_id\": \"n4\",\n      \"target_node_id\": \"n6\",\n      \"condition_label\": \"No\"\n    },\n    {\n      \"edge_id\": \"e6\",\n      \"source_node_id\": \"n6\",\n      \"target_node_id\": \"n1\",\n      \"condition_label\": null\n    }\n  ]\n}"
+  }
 }
